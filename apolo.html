@@ -308,10 +308,23 @@
 
         .jss6 {
             display: flex;
+            padding: 5px;
+            background-color: #ffffff ;
+            box-shadow: 0 5px 20px 0 rgb(128 128 128 / 30%);
+            margin-right: 20px;
+            border-radius: 8px;
+            width: 200px;
+            padding-top: 8px;
+        }
+
+        .jss6 img {
+            width: 25px;
+
         }
 
         .jss7 {
             display: flex;
+            
         }
 
         #slide1 {
@@ -355,13 +368,15 @@
             transition: 0.6s ease;
             border-radius: 0 3px 3px 0;
         }
+
         .slider {
             display: flex;
             width: 950px;
             height: 150px;
 
         }
-        .slider >slide1_img {
+
+        .slider>slide1_img {
             width: 100%;
             height: 100%;
             background-image: cover;
@@ -417,7 +432,7 @@
 
                     <div class="slider">
                         <!-- <div class="slider-items"> -->
-                            <!-- <div class="item active">
+                        <!-- <div class="item active">
                             <img src="slide-1.webp">
                             <div class="caption">
                                 Slide 1
@@ -435,8 +450,8 @@
                                 Slide 3
                             </div>
                         </div> -->
-                            <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a> -->
-                            <!-- <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+                        <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a> -->
+                        <!-- <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
                         <!-- </div> -->
                         <!-- slider controls -->
                         <div class="left-slide">&lt;</div>
@@ -457,11 +472,13 @@
                                 <img src="faq.jfif" alt="">
                             </div>
                             <div>
-                                <p>FAQs & Articles</p>
+                                FAQs & Articles
                             </div>
                         </div>
                         <div class="jss6">
-                            <div></div>
+                            <div>
+
+                            </div>
                             <div>Vaccination Queries</div>
                         </div>
                         <div class="jss6">
@@ -593,7 +610,8 @@
                     that combines predictive risk assessments and top-notch quality diagnostics with accurate physician
                     checks. Approximately 22 million health checks have been done based on this program. You can count
                     on us
-                    for </p>
+                    for
+                </p>
                 <li>Customised health risk assessments: diagnostic tests designed exclusively for your profile to
                     foresee
                     the health risks.</li>
@@ -664,7 +682,7 @@
 
         let x;
         let slide1 = document.querySelector(".slider")
-        let slide1_img = ['slide-1.webp', 'slide-2.jpg', 'slide-3.webp','slide-5.webp']
+        let slide1_img = ['slide-1.webp', 'slide-2.jpg', 'slide-3.webp', 'slide-5.webp']
 
         let img = document.createElement("img");
         img.className = "images_slid1"
