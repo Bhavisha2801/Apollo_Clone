@@ -5,7 +5,269 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Health Record</title>
+    <link rel="stylesheet" href="health_record.css" />
   </head>
 
-  <body></body>
+  <body>
+    <div id="main">
+      <div id="navbar_after_login"></div>
+
+      <!-- Adding div for input text for search and cancel button -->
+
+      <div>
+        <div id="search-box">
+          <button id="cancel_btn">Cancel</button>
+
+          <div>
+            <img
+              src="./Health_record_images/ic_phrsearch.svg"
+              placeholder="Search"
+            />
+          </div>
+          <input type="text" placeholder="Search" class="search-symbol" />
+        </div>
+      </div>
+
+      <!-- Add select Person as Hi Rajan!!! -->
+
+      <div class="select-line">
+        <h1 class="select">
+          hi
+          <select placeholder="rajan">
+            <option>rajan</option>
+            <option>madhavi</option>
+            <option>lucky</option>
+            <option value="bhavisha"></option>
+            <option>add member</option>
+          </select>
+        </h1>
+        <hr
+          style="
+            background-color: green;
+            height: 2px;
+            width: 180px;
+            margin-left: 35px;
+          "
+        />
+        <p style="color: #999595; font-size: 26px">
+          13 Mar 1997&nbsp;&nbsp; | &nbsp;&nbsp; MALE
+        </p>
+      </div>
+      <!-- Height Weight and Blood box -->
+      <div id="hwb">
+        <div class="flex-child">
+          Height <img src="./Health_record_images/ic_accordion_up.svg" /> <br />
+          <img src="./Health_record_images/ic_height.svg" />
+        </div>
+        <div class="flex-child">
+          Weight <img src="./Health_record_images/ic_accordion_up.svg" /> <br />
+          <img src="./Health_record_images/ic_weight.svg" />
+        </div>
+        <div class="flex-child">
+          Blood <img src="./Health_record_images/ic_accordion_up.svg" /> <br />
+          <img src="./Health_record_images/ic_blood.svg" />
+        </div>
+      </div>
+
+      <!-- Adding Grey colored Health Categories Section -->
+
+      <div id="health-box">
+        <br />
+        <br />
+        <h1 style="margin-left: 10px">Health Categories</h1>
+        <div id="categories_option">
+          <div id="inner_flex">
+            <img
+              src="./Health_record_images/ic_appointments_selected.svg"
+            />&nbsp;&nbsp;&nbsp; Doctor Consultations
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="./Health_record_images/ic_arrow_right.svg" />
+          </div>
+          <hr style="height: 1px; width: 300px; margin-left: 0px" />
+          <div id="inner_flex">
+            <img
+              src="./Health_record_images/ic_appointments_selected.svg"
+            />&nbsp;&nbsp;&nbsp; Test Reports
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="./Health_record_images/ic_arrow_right.svg" />
+          </div>
+          <hr style="height: 1px; width: 300px; margin-left: 0px" />
+          <div id="inner_flex">
+            <img
+              src="./Health_record_images/ic_appointments_selected.svg"
+            />&nbsp;&nbsp;&nbsp; Hospitalization
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="./Health_record_images/ic_arrow_right.svg" />
+          </div>
+          <hr style="height: 1px; width: 300px; margin-left: 0px" />
+          <div id="inner_flex">
+            <img
+              src="./Health_record_images/ic_appointments_selected.svg"
+            />&nbsp;&nbsp;&nbsp; Health Conditions
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="./Health_record_images/ic_arrow_right.svg" />
+          </div>
+          <hr style="height: 1px; width: 300px; margin-left: 0px" />
+          <div id="inner_flex">
+            <img
+              src="./Health_record_images/ic_appointments_selected.svg"
+            />&nbsp;&nbsp;&nbsp; Vaccination Report
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="./Health_record_images/ic_arrow_right.svg" />
+          </div>
+        </div>
+        <br />
+        <h1 style="margin-left: 10px">More from Health</h1>
+
+        <div id="categories_option">
+          <div id="inner_flex">
+            <img
+              src="./Health_record_images/ic_appointments_selected.svg"
+            />&nbsp;&nbsp;&nbsp; Insurance
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="./Health_record_images/ic_arrow_right.svg" />
+          </div>
+          <hr style="height: 1px; width: 300px; margin-left: 0px" />
+          <div id="inner_flex">
+            <img
+              src="./Health_record_images/ic_appointments_selected.svg"
+            />&nbsp;&nbsp;&nbsp; Insurance
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="./Health_record_images/ic_arrow_right.svg" />
+          </div>
+        </div>
+
+        <div class="nodataImg">
+          <img src="./Health_record_images/ic_nodata.svg" />
+        </div>
+        <br />
+
+        <p class="noData">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; No Data Available!!!
+        </p>
+        <button class="btn" placeholder="Add Prescription">
+          Add Prescription
+        </button>
+      </div>
+
+      <!-- Adding footer -->
+      <div id="footer">
+        <div id="icon">
+          <img
+            style="height: 100px; width: 100px; padding: 10px"
+            src="./Health_record_images/ic_logo.webp"
+          />
+        </div>
+        <h4 style="margin-left: 20px">About Apollo 247</h4>
+        <div>
+          <ul>
+            <li>&nbsp;&nbsp;About Us</li>
+            <li>Contact Us/Grevance</li>
+            <li>&nbsp;&nbsp;FAQs</li>
+            <li>&nbsp;&nbsp;Health Queries</li>
+            <li>&nbsp;&nbsp;Terms and Conditions</li>
+            <li>&nbsp;&nbsp;Return Policy</li>
+            <li>&nbsp;&nbsp;Refund Policy</li>
+            <li>&nbsp;&nbsp;Privacy Policy</li>
+            <li>&nbsp;&nbsp;Apollo 247 Android App</li>
+            <li>&nbsp;&nbsp;Apollo 247 iOS App</li>
+            <li>&nbsp;&nbsp;Apollo 247 Sitemap</li>
+            <li>&nbsp;&nbsp;Online Doctor App</li>
+            <li>&nbsp;&nbsp;Online Medicine App</li>
+            <li>&nbsp;&nbsp;Apollo Pharmacy</li>
+            <li>&nbsp;&nbsp;Hospitals And Clinics</li>
+            <li>&nbsp;&nbsp;Blogs</li>
+          </ul>
+        </div>
+
+        <h4 style="margin-left: 20px">Top Specialists</h4>
+
+        <ul>
+          <li>&nbsp;&nbsp;Covid Consultants</li>
+          <li>Consult Physicians</li>
+          <li>&nbsp;&nbsp;Consult Dermatologist</li>
+          <li>&nbsp;&nbsp;Health</li>
+          <li>&nbsp;&nbsp;Terms and Conditions</li>
+          <li>&nbsp;&nbsp;Return Policy</li>
+          <li>&nbsp;&nbsp;Refund Policy</li>
+          <li>&nbsp;&nbsp;Privacy Policy</li>
+          <li>&nbsp;&nbsp;Apollo 247 Android App</li>
+          <li>&nbsp;&nbsp;Apollo 247 iOS App</li>
+          <li>&nbsp;&nbsp;Apollo 247 Sitemap</li>
+          <li>&nbsp;&nbsp;Online Doctor App</li>
+          <li>&nbsp;&nbsp;Online Medicine App</li>
+          <li>&nbsp;&nbsp;Apollo Pharmacy</li>
+          <li>&nbsp;&nbsp;Hospitals And Clinics</li>
+          <li>&nbsp;&nbsp;Blogs</li>
+        </ul>
+
+        <h4 style="margin-left: 20px">Book Lab Tests at Home</h4>
+
+        <ul>
+          <li>&nbsp;&nbsp;Covid Consultants</li>
+          <li>Consult Physicians</li>
+          <li>&nbsp;&nbsp;Consult Dermatologist</li>
+          <li>&nbsp;&nbsp;Health</li>
+          <li>&nbsp;&nbsp;Terms and Conditions</li>
+          <li>&nbsp;&nbsp;Return Policy</li>
+          <li>&nbsp;&nbsp;Refund Policy</li>
+          <li>&nbsp;&nbsp;Privacy Policy</li>
+          <li>&nbsp;&nbsp;Apollo 247 Android App</li>
+          <li>&nbsp;&nbsp;Apollo 247 iOS App</li>
+          <li>&nbsp;&nbsp;Apollo 247 Sitemap</li>
+          <li>&nbsp;&nbsp;Online Doctor App</li>
+          <li>&nbsp;&nbsp;Online Medicine App</li>
+          <li>&nbsp;&nbsp;Apollo Pharmacy</li>
+          <li>&nbsp;&nbsp;Hospitals And Clinics</li>
+          <li>&nbsp;&nbsp;Blogs</li>
+        </ul>
+
+        <h4 style="margin-left: 20px">Product Categories</h4>
+
+        <ul>
+          <li>&nbsp;&nbsp;Covid Consultants</li>
+          <li>Consult Physicians</li>
+          <li>&nbsp;&nbsp;Consult Dermatologist</li>
+          <li>&nbsp;&nbsp;Health</li>
+          <li>&nbsp;&nbsp;Terms and Conditions</li>
+          <li>&nbsp;&nbsp;Return Policy</li>
+          <li>&nbsp;&nbsp;Refund Policy</li>
+          <li>&nbsp;&nbsp;Privacy Policy</li>
+          <li>&nbsp;&nbsp;Apollo 247 Android App</li>
+          <li>&nbsp;&nbsp;Apollo 247 iOS App</li>
+          <li>&nbsp;&nbsp;Apollo 247 Sitemap</li>
+          <li>&nbsp;&nbsp;Online Doctor App</li>
+          <li>&nbsp;&nbsp;Online Medicine App</li>
+          <li>&nbsp;&nbsp;Apollo Pharmacy</li>
+          <li>&nbsp;&nbsp;Hospitals And Clinics</li>
+          <li>&nbsp;&nbsp;Blogs</li>
+        </ul>
+
+        <h4 style="margin-left: 20px">Top Hospitals</h4>
+
+        <ul>
+          <li>&nbsp;&nbsp;Covid Consultants</li>
+          <li>Consult Physicians</li>
+          <li>&nbsp;&nbsp;Consult Dermatologist</li>
+          <li>&nbsp;&nbsp;Health</li>
+          <li>&nbsp;&nbsp;Terms and Conditions</li>
+          <li>&nbsp;&nbsp;Return Policy</li>
+          <li>&nbsp;&nbsp;Refund Policy</li>
+          <li>&nbsp;&nbsp;Privacy Policy</li>
+          <li>&nbsp;&nbsp;Apollo 247 Android App</li>
+          <li>&nbsp;&nbsp;Apollo 247 iOS App</li>
+          <li>&nbsp;&nbsp;Apollo 247 Sitemap</li>
+          <li>&nbsp;&nbsp;Online Doctor App</li>
+          <li>&nbsp;&nbsp;Online Medicine App</li>
+          <li>&nbsp;&nbsp;Apollo Pharmacy</li>
+          <li>&nbsp;&nbsp;Hospitals And Clinics</li>
+          <li>&nbsp;&nbsp;Blogs</li>
+        </ul>
+      </div>
+    </div>
+  </body>
 </html>
+
+<script type="module">
+  let navbar exort
+</script>
