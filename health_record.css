@@ -1,0 +1,99 @@
+* {
+  font-family: sans-serif;
+  border-radius: 5px;
+}
+body {
+  background-color: #e5e3c9;
+}
+#main {
+  width: 70%;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  background-color: white;
+}
+#search-box {
+  display: flex;
+  flex-direction: row-reverse;
+}
+#search-box > button {
+  color: #835eeb;
+  font-weight: bold;
+}
+#navbar_after_login {
+  height: 50px;
+  width: 100%;
+}
+#cancel_btn {
+  border: none;
+  cursor: pointer;
+}
+.search-symbol {
+  padding: 6px 18px 6px 10px;
+  width: 450px;
+  height: 30px;
+  border: none;
+  background-color: #eeeeee;
+  font-weight: bold;
+}
+.select > option,
+select,
+h1 {
+  color: #02475b;
+  font-size: 30px;
+  border: none;
+}
+
+.select-line {
+  margin-left: 30px;
+}
+#hwb {
+  width: 80%;
+  height: 80px;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  border: 1px solid rgb(196, 190, 190);
+  position: relative;
+  top: 30px;
+  box-shadow: 50px;
+  background-color: white;
+}
+.flex-child {
+  padding: 5px;
+  margin: 0 50px 0 50px;
+  width: 200px;
+  text-align: center;
+  font-size: 20px;
+  color: green;
+  border: 2px solid white;
+  font-weight: 500px;
+  cursor: pointer;
+}
+#health-box {
+  /* background-color: #02475b;*/
+  background-color: #ececec;
+}
+#categories_option {
+  /* display: flex;
+  flex-direction: column; */
+  width: 30%;
+  background-color: white;
+  color: #02475b;
+}
+#inner_flex {
+  /* display: flex; */
+  flex-direction: row;
+  text-align: center;
+  cursor: pointer;
+  padding-top: 5px;
+  margin-left: 10px;
+}
+.nodataImg,
+.noData {
+  margin-left: 500px;
+}
+.noData {
+  color: #02475b;
+  font-size: 30px;
+  font-weight: bold;
+}

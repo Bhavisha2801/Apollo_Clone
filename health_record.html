@@ -5,7 +5,145 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Health Record</title>
+    <link rel="stylesheet" href="health_record.css" />
   </head>
 
-  <body></body>
+  <body>
+    <div id="main">
+      <div id="navbar_after_login"></div>
+
+      <!-- Adding div for input text for search and cancel button -->
+
+      <div>
+        <div id="search-box">
+          <button id="cancel_btn">Cancel</button>
+
+          <div>
+            <img
+              src="./Health_record_images/ic_phrsearch.svg"
+              placeholder="Search"
+            />
+          </div>
+          <input type="text" placeholder="Search" class="search-symbol" />
+        </div>
+      </div>
+
+      <!-- Add select Person as Hi Rajan!!! -->
+
+      <div class="select-line">
+        <h1 class="select">
+          hi
+          <select placeholder="rajan">
+            <option>rajan</option>
+            <option>madhavi</option>
+            <option>lucky</option>
+            <option value="bhavisha"></option>
+            <option>add member</option>
+          </select>
+        </h1>
+        <hr
+          style="
+            background-color: green;
+            height: 2px;
+            width: 180px;
+            margin-left: 35px;
+          "
+        />
+        <p style="color: #999595; font-size: 26px">
+          13 Mar 1997&nbsp;&nbsp; | &nbsp;&nbsp; MALE
+        </p>
+      </div>
+      <!-- Height Weight and Blood box -->
+      <div id="hwb">
+        <div class="flex-child">
+          Height <img src="./Health_record_images/ic_accordion_up.svg" /> <br />
+          <img src="./Health_record_images/ic_height.svg" />
+        </div>
+        <div class="flex-child">
+          Weight <img src="./Health_record_images/ic_accordion_up.svg" /> <br />
+          <img src="./Health_record_images/ic_weight.svg" />
+        </div>
+        <div class="flex-child">
+          Blood <img src="./Health_record_images/ic_accordion_up.svg" /> <br />
+          <img src="./Health_record_images/ic_blood.svg" />
+        </div>
+      </div>
+
+      <!-- Adding Grey colored Health Categories Section -->
+
+      <div id="health-box">
+        <br />
+        <br />
+        <h1 style="margin-left: 10px">Health Categories</h1>
+        <div id="categories_option">
+          <div id="inner_flex">
+            <img
+              src="./Health_record_images/ic_appointments_selected.svg"
+            />&nbsp;&nbsp;&nbsp; Doctor Consultations
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="./Health_record_images/ic_arrow_right.svg" />
+          </div>
+          <hr style="height: 1px; width: 300px; margin-left: 0px" />
+          <div id="inner_flex">
+            <img
+              src="./Health_record_images/ic_appointments_selected.svg"
+            />&nbsp;&nbsp;&nbsp; Test Reports
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="./Health_record_images/ic_arrow_right.svg" />
+          </div>
+          <hr style="height: 1px; width: 300px; margin-left: 0px" />
+          <div id="inner_flex">
+            <img
+              src="./Health_record_images/ic_appointments_selected.svg"
+            />&nbsp;&nbsp;&nbsp; Hospitalization
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="./Health_record_images/ic_arrow_right.svg" />
+          </div>
+          <hr style="height: 1px; width: 300px; margin-left: 0px" />
+          <div id="inner_flex">
+            <img
+              src="./Health_record_images/ic_appointments_selected.svg"
+            />&nbsp;&nbsp;&nbsp; Health Conditions
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="./Health_record_images/ic_arrow_right.svg" />
+          </div>
+          <hr style="height: 1px; width: 300px; margin-left: 0px" />
+          <div id="inner_flex">
+            <img
+              src="./Health_record_images/ic_appointments_selected.svg"
+            />&nbsp;&nbsp;&nbsp; Vaccination Report
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="./Health_record_images/ic_arrow_right.svg" />
+          </div>
+        </div>
+        <br />
+        <h1 style="margin-left: 10px">More from Health</h1>
+
+        <div id="categories_option">
+          <div id="inner_flex">
+            <img
+              src="./Health_record_images/ic_appointments_selected.svg"
+            />&nbsp;&nbsp;&nbsp; Insurance
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="./Health_record_images/ic_arrow_right.svg" />
+          </div>
+          <hr style="height: 1px; width: 300px; margin-left: 0px" />
+          <div id="inner_flex">
+            <img
+              src="./Health_record_images/ic_appointments_selected.svg"
+            />&nbsp;&nbsp;&nbsp; Insurance
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="./Health_record_images/ic_arrow_right.svg" />
+          </div>
+        </div>
+
+        <div class="nodataImg">
+          <img src="./Health_record_images/ic_nodata.svg" />
+        </div>
+        <br />
+
+        <p class="noData">No Data Available!!!</p>
+      </div>
+    </div>
+  </body>
 </html>
