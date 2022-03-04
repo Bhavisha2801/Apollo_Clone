@@ -63,7 +63,7 @@ body{
 }
 
 #addvertise > img{
-    width: 80%;
+    width: 90%;
     height: 220px;
 }
 
@@ -156,9 +156,7 @@ body{
     margin-top: 0%;
     font-size: 13px
 }
-#second{
-    border: 1px solid black;
-}
+
 #above{
     display: grid;
     grid-template-columns: 70% 30%;
@@ -177,4 +175,41 @@ body{
 #second{
     background-color: white;
     padding: 3%;
+}
+#second > #second-fir{
+    color: #0e5d74;
+}
+#second > #second-sec{
+    color: #0e5d74;
+}
+#msgBoxPerson{
+    width: 50%;
+    height: 40px;
+}
+#msgBoxCall{
+    width: 50%;
+    height: 40px;
+}
+#thisToShow{
+    display: flex;
+    gap: 5%;
+    margin-top: 10%;
+}
+#thisToShow > h3{
+    font-size: medium;
+}
+#second > hr{
+    background-color: rgb(206, 199, 199);
+    size: 1px;
+}
+#second-fort > p{
+    color: #0e5d74;
+}
+
+#lastOfSecond{
+    display: flex;
+    gap: 10%;
+}
+#lastOfSecond > h4{
+    color: orange;
 }

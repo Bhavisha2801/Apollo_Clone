@@ -628,12 +628,19 @@
                 </div>
                 <div id="second-sec">
                     <h3>How Doctor Consultation Works</h3>
-                    <input type="text" id="msgBox" placeholder="Text/Audio/Video">
-                    <input type="text" id="msgBox" placeholder="Meet in Person">
-                    <div>
-                        <img src="" alt="">
+                    <div style="display: flex;">
+                    <input type="submit" id="msgBoxCall" value="Text/Audio/Video" onclick="videoCall()">
+                    <input type="submit" id="msgBoxPerson" value="Meet in Person" onclick="inPerson()">
+                    </div>
+                    <div id="thisToShow">
+                        <img src="Apollo_Clone_images/video-calling.svg" alt="">
                         <h3>HOW TO CONSULT A DOCTOR ONLINE VIA TEXT/AUDIO/VIDEO?</h3>
                     </div>
+                    <div id="thatToShow">
+                        <img src="" alt="">
+                        <h3>HOW TO AUDIO/VIDEO?</h3>
+                    </div>
+
                 </div>
                 <hr>
                 <div id="second-thir">
@@ -665,13 +672,95 @@
                 <hr>
                 <div id="second-fort">
                     <p>To enjoy services by Apollo 24/7 on Mobile, download our App</p>
-                    <div>
-                        <img src="" alt="">
+                    <div id="lastOfSecond">
+                        <img src="Apollo_Clone_images/apollo247.webp" alt="">
                         <h4>DOWNLOAD THE APP</h4>
                     </div>
                 </div>
             </div>    
         </div>
+
+
+        <div id="below">
+            <h3>Apollo 24|7 Specialities - Expertise You Can Trust</h3>
+            <p>A medical specialty is a specific area of medical practice that mainly focuses on a defined set of diseases, patients, philosophy, or skills. Examples include Paediatrics, Dermatology, Psychiatry, Gynaecology, and more. </p>
+            <p>Apollo 24|7 offers advanced services for a range of medical specialities, including:</p>
+            <ul>
+                <li><b>Dermatology - </b>A specialised branch of medicine that focuses on hair, nails, and skin-related disorders. Dermatology also encompasses conditions that affect the thin lining of your mouth, eyelids, and nose.</li>
+                <li><b>Obstetrics and Gynaecology - </b>Two major medical specialities that focus on women’s reproductive health. Obstetrics involves care during pregnancy, childbirth and after-delivery, while gynaecology specialises in issues related to women’s reproductive health.</li>
+                <li><b>General Physician/Internal Medicine - </b>General Physicians are highly experienced medical doctors who provide a broad range of non-surgical medical and health care to their patients. An internal medicine physician is a specified medical doctor who is highly proficient in internal medicine.</li>
+                <li><b>Paediatrics - </b>It majorly focuses on the health and medical care of children, infants, and young adults.</li>
+                <li><b>Psychiatry - </b>A specialised area of medicine that focuses majorly on the detection, treatment, and prevention of emotional, behavioural, and mental health disorders. </li>
+                <li><b>Dermatology - </b>A specialised branch of medicine that focuses on hair, nails, and skin-related disorders. Dermatology also encompasses conditions that affect the thin lining of your mouth, eyelids, and nose.</li>
+                <li><b>Obstetrics and Gynaecology - </b>Two major medical specialities that focus on women’s reproductive health. Obstetrics involves care during pregnancy, childbirth and after-delivery, while gynaecology specialises in issues related to women’s reproductive health.</li>
+                <li><b>General Physician/Internal Medicine - </b>General Physicians are highly experienced medical doctors who provide a broad range of non-surgical medical and health care to their patients. An internal medicine physician is a specified medical doctor who is highly proficient in internal medicine.</li>
+                <li><b>Paediatrics - </b>It majorly focuses on the health and medical care of children, infants, and young adults.</li>
+                <li><b>Psychiatry - </b>A specialised area of medicine that focuses majorly on the detection, treatment, and prevention of emotional, behavioural, and mental health disorders. </li>
+                <li><b>Paediatrics - </b>It majorly focuses on the health and medical care of children, infants, and young adults.</li>
+                <li><b>Psychiatry - </b>A specialised area of medicine that focuses majorly on the detection, treatment, and prevention of emotional, behavioural, and mental health disorders. </li>
+            </ul>
+            <h3>Why Choose Online Consultation</h3>
+            <p>There are several ways to reach out to a doctor without the need to visit a hospital or clinic, all thanks to technology. With the online facility available, doctor consultations have become easier, which can help you get the right health care. </p>
+            <p>Benefits for choosing Apollo 24|7’s online doctor consultations:</p>
+            <ul>
+                <li>Highly-qualified doctors are available 24x7 for you</li>
+                <li>Emergency medical services are available</li>
+                <li>Get online consultations within 15 minutes</li>
+                <li>Affordable rates and personalised solutions</li>
+                <li>Instant online consultations anytime, anywhere</li>
+            </ul>
+            <h3>When to Consult a Doctor</h3>
+            <p>If your health issues are complicated and your general practitioner feels that it needs immediate medical attention from a specialised doctor, you may be recommended to one. You can also get an online consultation with a medical specialist if you aren’t satisfied with the results.</p>
+            <h3>How to Consult a Doctor?</h3>
+            <p>Consult a doctor online with Apollo 24|7</p>
+            <p>Prioritise your health by choosing from 100+ medical specialities and 4000+ doctors online. Avail personalised healthcare solutions for any health concern with imperative online doctor consultations at Apollo 24|7.</p>
+            <p>Steps to book an online doctor consultation:</p>
+            <ul>
+                <li>Choose the doctor</li>
+                <li>Book your appointment</li>
+                <li>Make the payment</li>
+                <li>Be available in the consultation room on time</li>
+                <li>Get your doctor's note instantly</li>
+                <li>Constant follow-ups via text till next 7 days</li>
+            </ul>
+            <p>How to consult a doctor offline through the Apollo 24|7 app or website?</p>
+            <ul>
+                <li>Choose the medical doctor</li>
+                <li>Book your appointment</li>
+                <li>Visit the medical doctor at clinic or hospital</li>
+                <li>Make the payment</li>
+                <li>Get your doctor's note instantly</li>
+            </ul>
+
+<!-- 
+            <div id="FAQ">
+                <h2>FREQUENTLY ASKED QUESTIONS</h2>
+                <select name="" id="">
+                    <option value=""></option>
+                </select>
+            </div> -->
+
+
+
+        </div>
+
+
     </div>
 </body>
 </html>
+
+
+
+<script>
+    let msgBoxCall = document.getElementById("msgBoxCall");
+    let msgBoxPerson = document.getElementById("msgBoxPerson");
+    let thisToShow = document.getElementById("thisToShow").value;
+    let thatToShow = document.getElementById("thatToShow").value;
+    function videoCall(){
+
+        msgBoxCall.textContent = thisToShow;
+    }
+    function inPerson(){
+        msgBoxPerson.textContent = thatToShow;
+    }
+</script>
