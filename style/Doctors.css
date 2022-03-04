@@ -7,6 +7,8 @@ body{
     width: 70%;
     margin-left: auto;
     margin-right: auto;
+    background-color: #f7f8f5;
+    padding: 2%;
 }
 
 #consultation{
@@ -20,7 +22,11 @@ body{
     color: #107591;
 }
 
-#consultation > i{
+#consultation > p{
+    color: #107591;
+}
+
+#consultation > div > i{
     color: #05aa89;
     /* border-bottom: 2px solid #00b38e; */
     padding: 4px;
@@ -175,6 +181,7 @@ body{
 #second{
     background-color: white;
     padding: 3%;
+    height: 900px;
 }
 #second > #second-fir{
     color: #0e5d74;
@@ -212,4 +219,107 @@ body{
 }
 #lastOfSecond > h4{
     color: orange;
+}
+
+
+#below{
+    margin-top: 30%;
+    padding: 2%;
+    background-color: white;
+}
+
+#below h3{
+    font-size: 18px;
+    color: #0e5d74;
+}
+#below p{
+    color: #0e5d74;
+}
+#below ul li{
+    color: #0e5d74;
+    margin-bottom: 3%;
+}
+#below ul{
+    margin-top: 3%;
+}
+
+.faq-text{
+    color: #0e5d74;
+}
+
+#faq-main{
+    margin-top: 6%;
+}
+
+/* .faq-text{
+    padding-left: 3%;
+} */
+
+.faq{
+    max-width: 100%;
+    /* margin-top: 1rem; */
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #fff;
+    cursor: pointer;
+    background-color: white;
+}
+
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question h3{
+    font-size: 1.4rem;
+    padding-left: 1%;
+}
+
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+    /* padding: 1%; */
+}
+
+.answer p{
+    /* padding-top: rem; */
+    line-height: 1.6;
+    font-size: 1.4rem;
+    padding: 2%;
+}
+
+.faq.active .answer{
+    max-height: fit-content;
+    animation: fade 1s ease-in-out;
+}
+
+.faq.active svg{
+    transform: rotate(180deg);
+}
+
+svg{
+    transition: transform 0.5s ease-in;
+}
+
+@keyframes fade{
+    from{
+        opacity: 0;
+        transform: translate(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+
+
+.question > h3{
+    font-size: 18px;
+    color: #0e5d74;
+}
+
+.answer > p{
+    font-size: 15px;
+    color: #0e5d74;
 }
