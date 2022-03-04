@@ -91,9 +91,48 @@ h1 {
 .nodataImg,
 .noData {
   margin-left: 500px;
+  position: relative;
+  bottom: 400px;
 }
 .noData {
   color: #02475b;
   font-size: 30px;
   font-weight: bold;
+  position: relative;
+  bottom: 420px;
+}
+.btn {
+  width: 350px;
+  height: 50px;
+  margin-left: 550px;
+  background-color: orange;
+  position: relative;
+  bottom: 300px;
+  border: none;
+  cursor: pointer;
+}
+#footer {
+  color: white;
+  background-color: black;
+  padding: 5px;
+}
+#icon {
+  text-align: center;
+}
+h4 {
+  color: orange;
+  margin-left: 10px;
+}
+ul {
+  overflow: hidden;
+}
+li {
+  display: inline-block;
+  color: white;
+  list-style-type: circle;
+  margin: 5px;
+}
+ul li::before {
+  content: "\2022";
+  color: white;
 }
