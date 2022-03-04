@@ -24,7 +24,7 @@
             align-content: center;
             margin-left: auto;
             margin-right: auto;
-            background-color: white;
+            background-color: #f7f8f5;
             box-shadow: 0px 2px 3px gray;
             margin-top: -8px;
 
@@ -48,7 +48,6 @@
             align-items: center;
             background-color: #fff;
         }
-        
 
         .logo img {
             max-width: 60px;
@@ -71,14 +70,13 @@
             bottom: 0;
         }
 
-
-
         .options p {
             padding-left: 20px;
             padding-right: 20px;
             font-size: smaller;
 
         }
+
         .options p a {
             text-decoration: none;
         }
@@ -90,20 +88,14 @@
 
         .grid {
             display: flex;
-            /* border: 2px solid; */
             padding-left: 25px;
+            background-color: #ffffff;
         }
-
-        /* .grid img {
-             border: 2px solid; 
-        } */
 
         .user-profile {
             display: block;
             margin: 10px;
             padding-top: 15px;
-            /* size: 40px; */
-            /* background-color: gray; */
             color: white;
             width: 90px;
             height: 65px;
@@ -115,10 +107,7 @@
             width: 450px;
             /* border: 2px solid; */
             padding-bottom: 20px;
-
-            /* padding-right: 100px; */
         }
-
 
         .heading {
             font-size: 50px;
@@ -137,7 +126,6 @@
             display: grid;
             grid-template-columns: 150px 150px;
             gap: 10px;
-            /* border: 2px solid; */
             padding-left: 10px;
         }
 
@@ -150,7 +138,8 @@
             grid-column-start: 1;
             grid-column-end: 3;
             display: flex;
-            background-color: #335979;
+            background: linear-gradient(to right, #2d4d71, #5ba6ac);
+
             padding: 6px;
         }
 
@@ -188,6 +177,7 @@
             margin-inline-start: 0px;
             margin-inline-end: 0px;
         }
+
         /* .slideshow {
             width: 70%;
             height: 300px;
@@ -203,102 +193,178 @@
             100%{background-image: url(slide-5.webp);}
         } */
 
-        
-.slider{
-	max-width: 700px;
-	border:10px solid  #29a8e2;
-	margin:80px auto;
-	position: relative;
-	overflow: hidden;
-}
 
-.slider .left-slide,.slider .right-slide{
-  position: absolute;
-  height: 40px;
-  width: 40px;
-  background-color: #444444;
-  border-radius: 50%;
-  color:#ffffff;
-  font-size: 20px;
-  top:50%;
-  cursor: pointer;
-  margin-top: -20px;
-  text-align: center;
-  line-height: 40px;
-  
-}
-.slider .left-slide:hover,.slider .right-slide:hover{
- box-shadow: 0px 0px 10px black;
- background-color: #29a8e2;
-}
+        .slider {
+            max-width: 700px;
+            border: 10px solid #29a8e2;
+            margin: 80px auto;
+            position: relative;
+            overflow: hidden;
+        }
 
-.slider .left-slide{
-	left: 30px;
-}
-.slider .right-slide{
-	right: 30px;
-}
-.slider .slider-items .item img{
-	max-width: 100%;
-	display: block;
-	animation:zoom 1s ease;
-}
+        .slider .left-slide,
+        .slider .right-slide {
+            position: absolute;
+            height: 40px;
+            width: 40px;
+            background-color: #444444;
+            border-radius: 50%;
+            color: #ffffff;
+            font-size: 20px;
+            top: 50%;
+            cursor: pointer;
+            margin-top: -20px;
+            text-align: center;
+            line-height: 40px;
+            z-index: 0;
 
-@keyframes zoom{
-	0%{transform: scale(2);opacity: 0}
-	50%{transform: scale(2);}
-	100%{transform: scale(1);opacity:1}
-}
-.slider .slider-items .item{
-	display: none;
-	position: relative;
-}
-.slider .slider-items .item .caption{
-position: absolute;
-width: 100%;
-height: 60px;
-bottom: 0px;
-left: 0px;
-background-color: rgba(0,0,0,.5);
-line-height: 60px;
-text-align: center;
-color: #ffffff;
-font-size: 30px;
+        }
 
-}
+        .slider .left-slide:hover,
+        .slider .right-slide:hover {
+            box-shadow: 0px 0px 10px black;
+            background-color: #29a8e2;
+        }
 
-.slider .slider-items .item.active{
-	display: block;
-}
+        .slider .left-slide {
+            left: 30px;
+        }
+
+        .slider .right-slide {
+            right: 30px;
+        }
+
+        .slider .slider-items .item img {
+            max-width: 100%;
+            display: block;
+            animation: zoom 1s ease;
+        }
+
+        /* @keyframes zoom {
+            0% {
+                transform: scale(2);
+                opacity: 0
+            }
+
+            50% {
+                transform: scale(2);
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 1
+            }
+        } */
+
+        .slider .slider-items .item {
+            display: none;
+            position: relative;
+        }
+
+        .slider .slider-items .item .caption {
+            position: absolute;
+            width: 100%;
+            height: 60px;
+            bottom: 0px;
+            left: 0px;
+            background-color: rgba(0, 0, 0, .5);
+            line-height: 60px;
+            text-align: center;
+            color: #ffffff;
+            font-size: 30px;
+
+        }
+
+        .slider .slider-items .item.active {
+            display: block;
+        }
+
+        .jss {
+            min-height: 150px;
+        }
+
+        .jss1 {
+            padding-top: 20px;
+        }
+
+        .jss2 {
+            box-shadow: 0 5px 20px 0 rgb(128 128 128 / 30%);
+            border-radius: 10px;
+            background-color: #fff;
+        }
+
+        .jss5 {
+            /* display: contents; */
+            width: 80%;
+            /* border: 2px solid; */
+            padding: 20px;
+            /* text-align: center; */
+            align-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 8px;
+            box-shadow: 0 5px 20px 0 rgb(128 128 128 / 30%);
+        }
+
+        .jss6 {
+            display: flex;
+        }
+
+        .jss7 {
+            display: flex;
+        }
+
+        #slide1 {
+            width: 100%;
+            box-sizing: border-box;
+            position: relative;
+
+        }
+
+        #slide1 img {
+            width: 100%;
+            padding-top: 1%;
+        }
+
+        /* Next & previous buttons */
+        .prev {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: #db1313;
+            font-weight: bold;
+            font-size: 58px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+        }
+
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            left: 95%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: #db1313;
+            font-weight: bold;
+            font-size: 58px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+        }
     </style>
 </head>
 
 <body>
 
+
     <div class="main">
-        <div class="fixed_header">
-            <div class="navbar">
-                <div class="logo">
-                    <img src="https://newassets.apollo247.com/images/ic_logo.png" alt="logo">
-                </div>
-                <div class="options">
-                    <p><a href="Doctors.html">Doctors</a> <br> <span class="line"></span> <a>Consult <br> Online</a>
-                    </p>
-                    <p><a href="Pharmacy.html">Pharmacy</a> <br><span class="line"></span> <a>Medicnes & <br> other
-                            products</a> </p>
-                    <p><a href="Lab Tests.html">Lab Tests</a> <br> <span class="line"></span> <a> Health
-                            <br>check-ups</a> </p>
-                    <p><a href="Covid 19.html">Covid 19</a> <br> <span class="line"></span> <a>Latest <br>Updates</a>
-                    </p>
-                    <img id="img"
-                        src="data:image/png;base64,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"
-                        alt="">
-                    <img class="user-profile" src="user-profilee.webp" alt="user-profile">
+        <div id="header"></div>
 
 
-                </div>
-            </div>
-        </div>
         <div class="grid">
             <div class="left">
 
@@ -339,35 +405,65 @@ font-size: 30px;
         </div>
         <div class="second">
             <div class="slideshow">
-                
 
-<div class="slider">
-    <div class="slider-items">
-        <div class="item active">
-           <img src="slide-1.webp">
-           <div class="caption">
-              Slide 1
-           </div>
-        </div>
-        <div class="item">
-           <img src="slide-2.jpg">
-           <div class="caption">
-              Slide 2
-           </div>
-        </div>
-        <div class="item">
-           <img src="slide-3.webp">
-           <div class="caption">
-              Slide 3
-           </div>
-        </div>
-
-    </div>
-      <!-- slider controls -->
-        <div class="left-slide">&lt;</div>
-        <div class="right-slide">&gt;</div>
-      <!-- slider controls -->
- </div>
+                <div class="slider">
+                    <div class="slider-items">
+                        <!-- <div class="item active">
+                            <img src="slide-1.webp">
+                            <div class="caption">
+                                Slide 1
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="slide-2.jpg">
+                            <div class="caption">
+                                Slide 2
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="slide-3.webp">
+                            <div class="caption">
+                                Slide 3
+                            </div>
+                        </div> -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <!-- slider controls -->
+                    <div class="left-slide">&lt;</div>
+                    <div class="right-slide">&gt;</div>
+                    <!-- slider controls -->
+                </div>
+            </div>
+            <div class="jss">
+                <div class="jss1">
+                    <div class="jss2"></div>
+                </div>
+            </div>
+            <div class="jss5">
+                <p>For COVID-19 Vaccination related queries<br></p>
+                <div class="jss7">
+                    <div class="jss6">
+                        <div>
+                            <img src="faq.jfif" alt="">
+                        </div>
+                        <div>
+                            <p>FAQs & Articles</p>
+                        </div>
+                    </div>
+                    <div class="jss6">
+                        <div></div>
+                        <div>Vaccination Queries</div>
+                    </div>
+                    <div class="jss6">
+                        <div></div>
+                        <div>Chat with us</div>
+                    </div>
+                    <div class="jss6">
+                        <div></div>
+                        <div>Cowin Registration</div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="third">
@@ -476,57 +572,123 @@ font-size: 30px;
                 and more from proficient doctors and accredited experts by using the Apollo 24|7 app and website.</p>
         </div>
     </div>
-<script>
-    
-    // var a = ;
-    // var b = user-profilee.webp
-    // var arr = ['https://images.pexels.com/photos/9527445/pexels-photo-9527445.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940', 'https://newassets.apollo247.com/images/img-doctors@1x.jpg'];
-    // for (var i=0;i<arr.length;i++){
-    //     let slideshowImgElement = document.getElementById("img")
-    //     var x = setInterval(function () {
-    //         slideshowImgElement.src = arr[0]
-    //     }, 2000)
-        
-    // }
+    <script>
 
-    
- var slides=document.querySelector('.slider-items').children;
- var nextSlide=document.querySelector(".right-slide");
-var prevSlide=document.querySelector(".left-slide");
-var totalSlides=slides.length;
-var index=0;
+        // var a = ;
+        // var b = user-profilee.webp
+        // var arr = ['https://images.pexels.com/photos/9527445/pexels-photo-9527445.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940', 'https://newassets.apollo247.com/images/img-doctors@1x.jpg'];
+        // for (var i=0;i<arr.length;i++){
+        //     let slideshowImgElement = document.getElementById("img")
+        //     var x = setInterval(function () {
+        //         slideshowImgElement.src = arr[0]
+        //     }, 2000)
 
-nextSlide.onclick=function () {
-     next("next");
-}
-prevSlide.onclick=function () {
-     next("prev");
-}
+        // }
 
-function next(direction){
 
-   if(direction=="next"){
-      index++;
-       if(index==totalSlides){
-        index=0;
-       }
-   } 
-   else{
-           if(index==0){
-            index=totalSlides-1;
-           }
-           else{
-            index--;
-           }
-    }
+        // var slides = document.querySelector('.slider-items').children;
+        // var nextSlide = document.querySelector(".right-slide");
+        // var prevSlide = document.querySelector(".left-slide");
+        // var totalSlides = slides.length;
+        // var index = 0;
 
-  for(i=0;i<slides.length;i++){
-          slides[i].classList.remove("active");
-  }
-  slides[index].classList.add("active");     
+        // nextSlide.onclick = function () {
+        //     next("next");
+        // }
+        // prevSlide.onclick = function () {
+        //     next("prev");
+        // }
 
-}
-</script>
+        // function next(direction) {
+
+        //     if (direction == "next") {
+        //         index++;
+        //         if (index == totalSlides) {
+        //             index = 0;
+        //         }
+        //     }
+        //     else {
+        //         if (index == 0) {
+        //             index = totalSlides - 1;
+        //         }
+        //         else {
+        //             index--;
+        //         }
+        //     }
+
+        //     for (i = 0; i < slides.length; i++) {
+        //         slides[i].classList.remove("active");
+        //     }
+        //     slides[index].classList.add("active");
+
+        // }
+
+        let x;
+        let slide1 = document.querySelector(".slider")
+        let slide1_img = ['slide-1.webp', 'slide-2.jpg', 'slide-3.webp']
+
+        let img = document.createElement("img");
+        img.className = "images_slid1"
+        slide1.append(img);
+        console.log(slide1)
+
+        // let idx=0
+        let i = 0;
+        let slide_show1 = () => {
+            x = setInterval(function () {
+                if (i == slide1_img.length) {
+                    i = 0
+                }
+                img.src = slide1_img[i];
+                // console.log(i)
+                i++
+            }, 4000)
+        }
+        slide_show1()
+
+        function plusSlides(position) {
+            clearInterval(x)
+            i += position
+            if (i == slide1_img.length) {
+                i = 0
+            }
+            if (i < 0) {
+                i = (slide1_img.length - 1)
+            }
+            img.src = slide1_img[i];
+            slide_show1()
+        }
+    </script>
+    <script type="module">
+        let header = document.getElementById("header");
+        function navbar() {
+            return `<div class="fixed_header">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="https://newassets.apollo247.com/images/ic_logo.png" alt="logo">
+                </div>
+                <div class="options">
+                    <p><a href="Doctors.html">Doctors</a> <br> <span class="line"></span> <a>Consult <br> Online</a>
+                    </p>
+                    <p><a href="Pharmacy.html">Pharmacy</a> <br><span class="line"></span> <a>Medicnes & <br> other
+                            products</a> </p>
+                    <p><a href="Lab_Tests.html">Lab Tests</a> <br> <span class="line"></span> <a> Health
+                            <br>check-ups</a> </p>
+                    <p><a href="Covid_19.html">Covid 19</a> <br> <span class="line"></span> <a>Latest <br>Updates</a>
+                    </p>
+                    <img id="img"
+                        src="data:image/png;base64,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"
+                        alt="">
+                    <img class="user-profile" src="user-profilee.webp" alt="user-profile">
+
+
+                </div>
+                </div>
+            </div>`;
+            header.innerHTML = navbar();
+        }
+
+    </script>
 
 </body>
 
