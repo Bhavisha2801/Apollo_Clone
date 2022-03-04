@@ -3,10 +3,15 @@ body{
     margin: 0;
     background-color: #e7e9e1;
 }
+#main{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 #consultation{
     background-color: white;
-    width: 100%;
+    width: 95%;
     height: 200px;
     padding: 10px;
 }
@@ -15,15 +20,24 @@ body{
     color: #107591;
 }
 
-i{
-    color: #05b490;
-    border-bottom: 2px solid #00b38e;
+#consultation > i{
+    color: #05aa89;
+    /* border-bottom: 2px solid #00b38e; */
     padding: 4px;
 }
 
 #searchDoctors{
     border: none;
-    width: 780px;
+    /* width: 200%; */
+    /* border-bottom: 2px solid #00b38e; */
+}
+
+#searchbar{
+    display: grid;
+    grid-template-columns: 4% 30%;
+    border-bottom: 2px solid black;
+    width: 90%;
+    border-color: #00b38e;
 }
 
 #cities{
@@ -55,6 +69,7 @@ i{
 
 .consult_card_img{
     width: 40px;
+    margin-top: -5%;
 }
 
 .subCard{
@@ -73,21 +88,89 @@ i{
     margin-top: 4%;
     margin-bottom: 20px;
     height: 22%;
+    font-size: 15px;
 }
 
 .subCard > h4{
     color: rgb(128, 115, 115);
-    margin-top: 8%;
+    margin-top: 9%;
+    font-size: 14px;
 }
 
 .subCard > h5{
-    margin-top: -17px;
+    margin-top: -15px;
     margin-bottom: 4%;
 }
 
 #consult_cards{
     display: grid;
-    grid-template-columns: 17% 17% 17% 17%;
+    grid-template-columns: 22% 22% 22% 22%;
     gap: 3%;
     /* justify-content: space-around; */
+}
+.inside-flex{
+    display: flex;
+    /* gap: 1%; */
+}
+.outside-flex{
+    display: flex;
+    background-color: white;
+    /* width: 100%; */
+    height: 130px;
+    gap: 10%;
+    padding: 1%;
+    border-radius: 4%;
+    box-shadow: 0px 0px 10px grey;
+    margin-top: -3%;
+}
+.outside-flex > div > img{
+    width: 50px;
+    margin-top: 30%;
+}
+.inside-flex > div > i{
+    margin-top: 400%;
+    margin-left: 250%;
+}
+.inside-text > p{
+    color: grey;
+    font-size: 14px;
+    margin-top: -7%;
+}
+.inside-text > h4{
+    font-size: 14px;
+}
+
+.inside-flex + hr{
+    width: 100%;
+    margin-top: -1%;
+}
+#Boxes{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 60% 60%;
+    gap: 1%;
+    padding: 1%;
+    margin-top: 3%;
+}
+.inside-flex + hr + h5{
+    margin-top: 0%;
+    font-size: 13px
+}
+#second{
+    border: 1px solid black;
+}
+#above{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+#first > hr{
+    width: 100%;
+}
+#second-thir > .info{
+    display: flex;
+    gap: 5%;
+}
+.info{
+    font-size: 14px;
+    color: #67919d;
 }
