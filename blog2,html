@@ -202,7 +202,7 @@ h3{
    <div><h2>Latest Article</h2></div>
     <div class = "div2">
         <div>
-            <img src = https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgWAsiZkY2ypslmSv4JsgxDWEiyKRcEZ4rBQ&usqp=CAU>
+            <img src = https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJF8MFzlAzjUC-AKdWW0i3BLRlyJbPuKqO6w&usqp=CAU class = "img"> >
             <p>Health & Nutrition</p>
             <h3>Love is the Cure:The Health Benefits of Love</h3>
             <p>Love is one of the most powerful emotions a human can experience.it has the ability to make us happy,sad,excited,and everything in between</p>
@@ -298,6 +298,9 @@ h3{
 
     <div class = "button">
         <input type = "submit" value = "VIEW MORE">
+    </div>
+    <div>
+        <img src = "./blogimages/menshealth.png">
     </div>
 </body>
 <script>
