@@ -1,8 +1,8 @@
-/* body{
+body{
     padding: 10px;
     margin: 0;
     background-color: #e7e9e1;
-} */
+}
 
 
 
@@ -130,7 +130,7 @@
 }
 .inside-flex > div > i{
     margin-top: 400%;
-    margin-left: 250%;
+    margin-left: 220%;
 }
 .inside-text > p{
     color: grey;
@@ -148,10 +148,11 @@
 #Boxes{
     width: 80%;
     display: grid;
-    grid-template-columns: 60% 60%;
+    grid-template-columns: 61% 61%;
     gap: 1%;
     padding: 1%;
     margin-top: 3%;
+    margin-bottom: 4%;
 }
 .inside-flex + hr + h5{
     margin-top: 0%;
@@ -164,6 +165,11 @@
 }
 #first > hr{
     width: 100%;
+}
+
+#second-fir > #dott > li{
+    color: #0e5d74;
+    /* list-style: dotted; */
 }
 #second-thir > .info{
     display: flex;
@@ -187,18 +193,35 @@
 #msgBoxPerson{
     width: 50%;
     height: 40px;
+    background-color: white;
 }
 #msgBoxCall{
     width: 50%;
     height: 40px;
+    background-color: white;
 }
 #thisToShow{
-    display: flex;
-    gap: 5%;
+    gap: 10%;
+    margin-top: 10%;
+}
+#thatToShow{
+    gap: 10%;
     margin-top: 10%;
 }
 #thisToShow > h3{
-    font-size: medium;
+    font-size: small;
+}
+#thatToShow > h3{
+    font-size: small;
+}
+#thisToShow > img{
+    width: 25%;
+}
+#thatToShow > img{
+    width:25%;
+}
+#show{
+    margin-bottom: 10%;
 }
 #second > hr{
     background-color: rgb(206, 199, 199);
