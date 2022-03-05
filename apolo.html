@@ -47,6 +47,7 @@
             box-shadow: 0 2px 10px 0 rgb(0 0 0 / 10%);
             align-items: center;
             background-color: #fff;
+            padding-left: 20px;
         }
 
         .logo img {
@@ -98,7 +99,7 @@
             padding-top: 15px;
             color: white;
             width: 90px;
-            height: 65px;
+            height: 60px;
             border-radius: 50%;
         }
 
@@ -115,10 +116,11 @@
             font-weight: 700;
         }
 
+
         .left .paragraph {
             color: #81d0f0;
             font-size: 15px;
-            margin-right: 120px;
+            padding-right: 80px;
             /* letter-spacing: 2px; */
         }
 
@@ -139,27 +141,28 @@
             grid-column-end: 3;
             display: flex;
             background: linear-gradient(to right, #2d4d71, #5ba6ac);
-
+            border-radius: 8px;
             padding: 6px;
         }
 
         .c {
             display: flex;
-
+            border-radius: 8px;
             box-shadow: 0px 2px 3px gray;
+            width: 180px;
         }
 
         .a img {
             height: 30px;
+            padding: 7px
         }
 
         .c img {
-            height: 30px;
+            height: 35px;
+            padding: 7px;
         }
 
-        .second {
-            height: 700px;
-        }
+
 
         .third {
             display: flexbox;
@@ -178,33 +181,18 @@
             margin-inline-end: 0px;
         }
 
-        /* .slideshow {
-            width: 70%;
-            height: 300px;
-            background-image: url(slide-1.webp);
-            background-size: 100% 100%;
-            animation: slider 12s infinite alternate;
-        }
-        @keyframes slider{
-            0%{background-image: url(slide-1.webp);}
-            25%{background-image: url(slide-2.jpg);}
-            50%{background-image: url(slide-3.webp);}
-            750%{background-image: url(slide-4.lnk);}
-            100%{background-image: url(slide-5.webp);}
-        } */
-
-
         .slider {
             max-width: 700px;
-            border: 10px solid #29a8e2;
+            /* border: 10px solid #29a8e2; */
             margin: 80px auto;
-            position: relative;
+            /* position: relative; */
             overflow: hidden;
+            box-shadow: 0 2px 10px 0 rgb(0 0 0 / 10%);
         }
 
         .slider .left-slide,
         .slider .right-slide {
-            position: absolute;
+            /* position: relative; */
             height: 40px;
             width: 40px;
             background-color: #444444;
@@ -227,11 +215,11 @@
         }
 
         .slider .left-slide {
-            left: 30px;
+            left: -30px;
         }
 
         .slider .right-slide {
-            right: 30px;
+            right: -30px;
         }
 
         .slider .slider-items .item img {
@@ -279,7 +267,7 @@
             display: block;
         }
 
-        .jss {
+        /* .jss {
             min-height: 150px;
         }
 
@@ -291,7 +279,7 @@
             box-shadow: 0 5px 20px 0 rgb(128 128 128 / 30%);
             border-radius: 10px;
             background-color: #fff;
-        }
+        } */
 
         .jss5 {
             /* display: contents; */
@@ -309,7 +297,7 @@
         .jss6 {
             display: flex;
             padding: 5px;
-            background-color: #ffffff ;
+            background-color: #ffffff;
             box-shadow: 0 5px 20px 0 rgb(128 128 128 / 30%);
             margin-right: 20px;
             border-radius: 8px;
@@ -324,7 +312,30 @@
 
         .jss7 {
             display: flex;
-            
+
+        }
+
+        .jss8 img {
+            display: flex;
+            width: 92%;
+            height: 200px;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 18px;
+            padding-bottom: 18px;
+            /* padding: 30px; */
+        }
+
+        .jss9 {
+
+            /* height: 120px; */
+
+            padding-left: 40px;
+        }
+
+        .jss9 img {
+            width: 92%;
         }
 
         #slide1 {
@@ -340,7 +351,7 @@
         }
 
         /* Next & previous buttons */
-        .prev {
+        /* .prev {
             cursor: pointer;
             position: absolute;
             top: 50%;
@@ -367,7 +378,7 @@
             font-size: 58px;
             transition: 0.6s ease;
             border-radius: 0 3px 3px 0;
-        }
+        } */
 
         .slider {
             display: flex;
@@ -381,6 +392,43 @@
             height: 100%;
             background-image: cover;
         }
+
+        .jss11 {
+            /* justify-content: center; */
+            align-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #ffffff;
+            padding-top: 12px;
+            padding: 15px;
+        }
+
+        /* .icon-article:before {
+            content: "\e94a";
+            color: #fc9916;
+            width: 24px;
+            height: 24px;
+        } */
+        .jss12 {
+            /* display: grid;
+            justify-content: end; */
+            padding: 5px;
+            
+            box-shadow: 0 7px 30px 0 rgba(95, 95, 95, 0.3);
+        }
+        .jss13 {
+            display: grid;
+            justify-content: end;
+        }
+        .jss14 {
+            
+            letter-spacing: 0.01ch;
+            font: 1em sans-serif;
+            font-weight: 650;
+            font-size: 15px;
+            color: #07ae8b;
+        }
+
     </style>
 </head>
 
@@ -454,8 +502,8 @@
                         <!-- <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
                         <!-- </div> -->
                         <!-- slider controls -->
-                        <div class="left-slide">&lt;</div>
-                        <div class="right-slide">&gt;</div>
+                        <div class="left-slide" onclick="plusSlides(-1)">&lt;</div>
+                        <div class="right-slide" onclick="plusSlides(1)">&gt;</div>
                         <!-- slider controls -->
                     </div>
                 </div>
@@ -491,6 +539,25 @@
                         </div>
                     </div>
                 </div>
+                <div class="jss8">
+                    <img src="prohealthSliderTwo.webp" alt="">
+                </div>
+                <div class="jss9">
+                    <img src="ecosystem-banner.webp" alt="">
+                    <div class="jss11">
+                        <span class="jss14">HEALTH BLOG</span> <br>
+                        Explore healthcare content created every day by our experts.
+                        <div class="jss13">
+                            <div class="jss12">
+                                <span class="icon-article">
+    
+                                </span>
+                                Read the latest Articles
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <div class="third">
                 <h6>Apollo 24|7 - Your Most Trusted Healthcare Brand</h6>
@@ -682,7 +749,7 @@
 
         let x;
         let slide1 = document.querySelector(".slider")
-        let slide1_img = ['slide-1.webp', 'slide-2.jpg', 'slide-3.webp', 'slide-5.webp']
+        let slide1_img = ['slide-1.webp', 'slide-2.jpg', 'slide-3.webp', 'slide-5.webp', 'slide-6.webp']
 
         let img = document.createElement("img");
         img.className = "images_slid1"
@@ -718,7 +785,7 @@
     </script>
     <script type="module">
         let header = document.getElementById("header");
-        import navbar from "./navbar.js";
+        import navbar from "./navbar_before_login.js";
         header.innerHTML = navbar();
     </script>
 
