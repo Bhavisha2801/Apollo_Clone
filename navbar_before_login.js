@@ -14,7 +14,7 @@ function navbar() {
             <p><a href="Covid_19.html">Covid 19</a> <br> <span class="line"></span> <a>Latest <br>Updates</a>
             </p>
             <img id="cart.png" alt="">
-            <img class="user-profile" src="user-profilee.webp" alt="user-profile">
+            <a onclick="openForm()"><img class="user-profile" src="user-profilee.webp" alt="user-profile"></a>
 
 
          </div>
