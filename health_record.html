@@ -10,7 +10,7 @@
 
   <body>
     <div id="main">
-      <div id="navbar_after_login"></div>
+      <div id="header"></div>
 
       <!-- Adding div for input text for search and cancel button -->
 
@@ -151,7 +151,7 @@
       </div>
 
       <!-- Adding footer -->
-      <div id="footer">
+      <!-- <div id="footer">
         <div id="icon">
           <img
             style="height: 100px; width: 100px; padding: 10px"
@@ -263,11 +263,24 @@
           <li>&nbsp;&nbsp;Hospitals And Clinics</li>
           <li>&nbsp;&nbsp;Blogs</li>
         </ul>
-      </div>
+      </div> -->
+      <div id="lastPart"></div>
     </div>
+    <div id="log"></div>
+
+    <script src="login.js"></script>
   </body>
 </html>
-
 <script type="module">
-  // let navbar export
+  let header = document.getElementById("header");
+  import navbar from "./navbar_before_login.js";
+  header.innerHTML = navbar();
+
+  let foot = document.getElementById("lastPart");
+  import footer from "./footerF.js";
+  foot.innerHTML = footer();
+
+  let log = document.getElementById("log");
+  import login from "./import_login.js";
+  log.innerHTML = login();
 </script>
