@@ -8,7 +8,7 @@
     <title>Document</title>
     <style>
         body {
-            color: #02475b;
+            background-color: #dcdfce;
             /* margin: 0; */
             font-size: 0.875rem;
             font-family: IBM Plex Sans, sans-serif;
@@ -31,9 +31,9 @@
         }
 
         #header {
-            top: 0;
+            /* top: 0;
             left: 0;
-            right: 0;
+            right: 0; */
             position: sticky;
         }
 
@@ -182,12 +182,15 @@
         }
 
         .slider {
-            max-width: 700px;
+            max-width: 900px;
             /* border: 10px solid #29a8e2; */
             margin: 80px auto;
             /* position: relative; */
             overflow: hidden;
             box-shadow: 0 2px 10px 0 rgb(0 0 0 / 10%);
+        }
+        .slider img {
+            width: 900px;
         }
 
         .slider .left-slide,
@@ -332,10 +335,15 @@
             /* height: 120px; */
 
             padding-left: 40px;
+            
         }
 
         .jss9 img {
-            width: 92%;
+            width: 96%;
+        }
+        .jss16 {
+            border: 1px dashed gray;
+            
         }
 
         #slide1 {
@@ -343,6 +351,16 @@
             box-sizing: border-box;
             position: relative;
 
+        }
+        .jss15 {
+            position: fixed;
+            bottom: 0px;
+            right: 2%;
+            
+        }
+        .jss15 img {
+            width: 80px;
+            
         }
 
         #slide1 img {
@@ -433,7 +451,11 @@
 </head>
 
 <body>
+    <span class="jss15">
+        <img src="https://newassets.apollo247.com/images/ic-mascot.png" alt="">
+    </span>
     <div class="main">
+        
         <div id="header"> </div>
         <div id="container">
 
@@ -502,8 +524,8 @@
                         <!-- <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
                         <!-- </div> -->
                         <!-- slider controls -->
-                        <div class="left-slide" onclick="plusSlides(-1)">&lt;</div>
-                        <div class="right-slide" onclick="plusSlides(1)">&gt;</div>
+                        <!-- <div class="left-slide" onclick="plusSlides(-1)">&lt;</div> -->
+                        <!-- <div class="right-slide" onclick="plusSlides(1)">&gt;</div> -->
                         <!-- slider controls -->
                     </div>
                 </div>
@@ -546,15 +568,15 @@
                     <img src="ecosystem-banner.webp" alt="">
                     <div class="jss11">
                         <span class="jss14">HEALTH BLOG</span> <br>
-                        Explore healthcare content created every day by our experts.
+                        Explore healthcare content created every day by our experts. 
                         <div class="jss13">
                             <div class="jss12">
                                 <span class="icon-article">
     
                                 </span>
-                                Read the latest Articles
-                            </div>
-                        </div>
+                                Read the latest Articles 
+                            </div> 
+                        </div> <hr class="jss16">
                     </div>
                 </div>
 
