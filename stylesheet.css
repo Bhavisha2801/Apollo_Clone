@@ -125,6 +125,7 @@ body {
 
 .grids {
     display: grid;
+    padding: 2px;
 }
 
 .a {
@@ -141,7 +142,7 @@ body {
     display: flex;
     border-radius: 8px;
     box-shadow: 0px 2px 3px gray;
-    width: 180px;
+    width: 200px;
 }
 
 .a img {

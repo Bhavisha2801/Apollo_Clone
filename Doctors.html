@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style/Doctors.css">
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="footerF.css">
+    <link rel="stylesheet" href="login.css">
     <script src="https://kit.fontawesome.com/41f4571c87.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -745,7 +746,7 @@
 
 
         <div id="faq-main">
-            
+            <h2 style="color: #0e5d74; margin-left: 1%;">Frequently Asked Questions</h2>
             <div class="faq">
                     <div class="question">
                             <h3>What is an online doctor consultation or online medical consultation?</h3>
@@ -893,6 +894,10 @@
 
 
     </div>
+
+    <div id="log"></div>
+
+
 </body>
 </html>
 
@@ -933,4 +938,11 @@
     import footer from "./footerF.js";
     foot.innerHTML = footer();
 
+    let log = document.getElementById("log");
+    import login from "./import_login.js";
+    log.innerHTML = login();
+
 </script>
+
+
+<script src="login.js"></script>

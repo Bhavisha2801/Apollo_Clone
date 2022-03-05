@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="stylesheet.css">
-    
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="footerF.css">
 </head>
 
 <body>
@@ -277,7 +278,21 @@
                 </p>
             </div>
         </div>
+
+
+
+        <div id="lastPart"></div>
+
+
+
     </div>
+
+    <div id="log"></div>
+
+
+<script src="login.js"></script>
+
+
     <script>
 
         // var a = ;
@@ -369,6 +384,16 @@
         let header = document.getElementById("header");
         import navbar from "./navbar_before_login.js";
         header.innerHTML = navbar();
+
+
+        let foot = document.getElementById("lastPart");
+        import footer from "./footerF.js";
+        foot.innerHTML = footer();
+
+        let log = document.getElementById("log");
+        import login from "./import_login.js";
+        log.innerHTML = login();
+
     </script>
 
 </body>
