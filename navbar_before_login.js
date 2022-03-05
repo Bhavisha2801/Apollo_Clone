@@ -13,8 +13,8 @@ function navbar() {
                     <br>check-ups</a> </p>
             <p><a href="Covid_19.html">Covid 19</a> <br> <span class="line"></span> <a>Latest <br>Updates</a>
             </p>
-            <img id="cart.png" alt="">
-            <a onclick="openForm()"><img class="user-profile" src="user-profilee.webp" alt="user-profile"></a>
+            <img class="cart" src="cart.png" alt="">
+            <a onclick="openForm()"><img class="user-profile" src="./opoloimages/user-profilee.webp" alt="user-profile"></a>
 
 
          </div>
