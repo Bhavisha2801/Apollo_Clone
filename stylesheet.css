@@ -64,6 +64,7 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   font-size: smaller;
+  margin-top: 5%;
 }
 
 .options p a {
@@ -419,3 +420,10 @@ body {
   font-size: 15px;
   color: #07ae8b;
 }
+
+
+.options > a >p{
+  margin-top: -8%;
+  position: relative;
+  left: 15%;
+} 
