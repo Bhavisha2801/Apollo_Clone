@@ -9,7 +9,7 @@ function login(){
       <label for="psw"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="psw" required="" class="inp">
   
-      <a href="apolo.html"><button type="submit" class="btn">Login</button></a>
+      <a href="apolo.html"><button type="submit" class="btn" onclick="changeText()" id="txtchange">Login</button></a>
       <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
     </form>
   </div>`

@@ -152,6 +152,7 @@ body{
     gap: 1%;
     padding: 1%;
     margin-top: 3%;
+    margin-bottom: 4%;
 }
 .inside-flex + hr + h5{
     margin-top: 0%;
@@ -192,18 +193,35 @@ body{
 #msgBoxPerson{
     width: 50%;
     height: 40px;
+    background-color: white;
 }
 #msgBoxCall{
     width: 50%;
     height: 40px;
+    background-color: white;
 }
 #thisToShow{
-    display: flex;
-    gap: 5%;
+    gap: 10%;
+    margin-top: 10%;
+}
+#thatToShow{
+    gap: 10%;
     margin-top: 10%;
 }
 #thisToShow > h3{
-    font-size: medium;
+    font-size: small;
+}
+#thatToShow > h3{
+    font-size: small;
+}
+#thisToShow > img{
+    width: 25%;
+}
+#thatToShow > img{
+    width:25%;
+}
+#show{
+    margin-bottom: 10%;
 }
 #second > hr{
     background-color: rgb(206, 199, 199);

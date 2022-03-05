@@ -1,5 +1,7 @@
+var para = document.getElementById("para")
 
-    function openForm() {
+
+  function openForm() {
     document.getElementById("myForm").style.display = "block";
   }
   
@@ -7,4 +9,8 @@
     document.getElementById("myForm").style.display = "none";
   }
 
+  function changeText()
+{
+  para.textContent = "lodjdd"
+}
   
