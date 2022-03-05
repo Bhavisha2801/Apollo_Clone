@@ -12,6 +12,32 @@
 
 
 
+        <div class = "search_bar">
+            <div>
+                <input style = "width:100%;";type = "text" placeholder="Search Meds, brands and more" class = "searchbar">
+                
+             </div>
+            <div>
+             <div><img style = "width:50px;height:50px; margin-left:10%"src =https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHxoM8WjrUEphrYTcY2Tc50MJCwtOfc6LOWw&usqp=CAU></div>
+              <div><h3 style = "color:grey;padding-left:30%;margin-top:-10%"> Special Offers</h3></div>
+            </div>
+             </div>
+
+
+
+        <div class = "slide">
+            <div id = "slide_show"></div>
+            <div>
+                <h4 style = "color:rgb(71, 100, 90);margin:10px;">Place your order via prescriptions</h4>
+             <button>Upload</button>
+             <h4 style = "color:rgb(71, 100, 90);margin-left:20px;margin-top:30px;">Your folder</h4>
+           <div>
+               <img class = "image" src = "https://newassets.apollo247.com/images/ic_prescription_pad.svg">
+           </div>
+            </div>
+        </div>
+
+
 
 <!-- slide show and upload part remaining -->
 
@@ -670,6 +696,27 @@ faqs.forEach(faq => {
         faq.classList.toggle("active");
     })
 })
+
+
+
+let images = [
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkYzwK5-Ejc-gcV7uYPfmmQKAHqcsUvtlqRA&usqp=CAU',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgaWDnHxnC8tn6OIqWn0EWzD63BKg_PsElwg&usqp=CAU',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0zvm9p0gefuoJeZEvzHzx2nnjq_AZWeX-Kg&usqp=CAU',
+        ]
+        let container = document.getElementById('slide_show')
+        function start(){
+            let count =0;
+            setInterval(function(){
+                container.innerHTML=null
+                if(count === images.length){count =0;}
+                let img = document.createElement('img')
+                img.src = images[count]
+                container.append(img)
+                count++;
+            },2000)
+        }
+    start()
 
 
 

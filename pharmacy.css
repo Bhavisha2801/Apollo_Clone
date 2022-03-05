@@ -437,3 +437,69 @@ svg{
     font-size: 15px;
     color: #0e5d74;
 }
+
+
+.slide{
+    /* border:1px solid black; */
+    width:100%;
+    height:200px;
+    display:flex;
+}
+.slide > div{
+    /* border:1px solid black; */
+    margin:10px;
+    width:100%;
+    margin:10px;
+     border:1px solid rgb(199, 193, 193); 
+    border-radius:10px;
+}
+#slide_show{
+    width:100%;
+    height:150px;
+     /* border:1px solid black;  */
+     border-radius:10px;
+   
+    display:fkex;
+}
+#slide_show > img{
+ width:100%;
+ height:180px;
+}
+
+.slide > div > button{
+    width:200px;
+    height:40px;
+    border-radius:20px;
+    cursor:pointer;
+    margin-left:10%;
+    background-color:orange;
+}
+.image{
+padding-left:70%;
+margin-top:-100%;
+}
+
+.search_bar{
+    display:flex;
+    border:1px solid black;
+    margin:10px;
+}
+.search_bar>div{
+/* border:1px solid black; */
+margin:10px;
+width:100%; 
+
+background-color:rgb(245, 237, 237);
+
+}
+.searchbar{
+    width:100%;
+     height:40px; 
+     border:none; 
+    border-bottom:1px solid green;
+    color:grey;
+    background-color:rgb(245, 237, 237);
+    border-radius:10px;
+    margin-left:10px;
+    
+}
