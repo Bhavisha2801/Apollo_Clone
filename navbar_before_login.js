@@ -11,7 +11,7 @@ function navbar() {
                     products</a> </p>
             <p><a href="Lab_Tests.html">Lab Tests</a> <br> <span class="line"></span> <a> Health
                     <br>check-ups</a> </p>
-            <p><a href="Covid_19.html">Covid 19</a> <br> <span class="line"></span> <a>Latest <br>Updates</a>
+            <p><a href="Blog.html">Blog/a> <br> <span class="line"></span> <a>Latest <br>Updates</a>
             </p>
             <img id="cart.png" alt="">
             <a onclick="openForm()" id="anchor">
