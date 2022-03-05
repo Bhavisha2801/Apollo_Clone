@@ -4,9 +4,578 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pharmacy Page</title>
 </head>
-<body>
+<style>
+    *{
+        margin:0px;
+        padding:0px;
+        box-sizing:border-box;
+
+    }
+    body{
+        font-family:"Quicksand",sans-serif;
+        /* background:green; */
+        color:red;
+        width:70%;
+        border:1px solid black;
+        margin-left:15%;
+
+    }
+    section{
+        min-height:100vh;
+        width:80%;
+        margin:0 auto;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+    .title{
+        font-size:1.5rem;
+        margin: 2rem 0rem ;
+    }
+    .faq{
+        /* max-width:700px;  */
+         margin-top:2rem; 
+         padding-bottom:1rem; 
+         border-bottom:1px solid black; 
+        cursor:pointer;
+    }
+    .question{
+        display:flex;
+         justify-content:space-between; 
+        /* align-items:center; */
+    }
+    .question h3{
+        font-size:1rem;
+    }
+    .answer {
+        max-height:0;
+            overflow:hidden;    
+         transition:max-height 1.4s ease;
+    }  
+    .answer p{
+        padding-top:1rem;
+        line-height:1.6;
+        font-size:1.4rem;
+    }
+     .faq.active.answer{
+        max-height:300px;
+
+    }
+    .faq.active .answer{
+        transform:rotate(180deg);
+    }
+    svg{
+        transition:transform 0.5s ease-in;
+    } 
+    .div1{
+        display:flex;
+        flex-direction:column;
+        border:1px solid rgb(182, 173, 173);
+        background-color:rgb(236, 230, 230);
+        border-radius:10px;
+        
+    }
+    .div1 > div{
+        margin:5px;
+        /* border:1px solid black; */
+        background-color:rgb(235, 226, 226);
+        
+    }
+    .para{
+        color:black;
+        margin:20px;
+        border:1px solid rgb(207, 203, 203);
+        border-radius:10px;
+    }
+    .heading{
+        display:flex;
+        /* border:1px solid black; */
+        background-color: rgb(240, 220, 222);
+        margin:20px;
+    }
+    .heading > div{
+        width:500px;
+        height:150px;
+        /* border:1px solid black; */
+        margin:20px;
+    }
+    .search_bar{
+        display:flex;
+        border:1px solid black;
+        margin:10px;
+    }
+    .search_bar>div{
+   /* border:1px solid black; */
+   margin:10px;
+    width:100%; 
+   
+   background-color:rgb(245, 237, 237);
+
+    }
+    .searchbar{
+        width:100%;
+         height:40px; 
+         border:none; 
+        border-bottom:1px solid green;
+        color:grey;
+        background-color:rgb(245, 237, 237);
+        border-radius:10px;
+        margin-left:10px;
+        
+    }
+    .slide{
+        /* border:1px solid black; */
+        width:100%;
+        height:200px;
+        display:flex;
+    }
+    .slide > div{
+        /* border:1px solid black; */
+        margin:10px;
+        width:100%;
+        margin:10px;
+         border:1px solid rgb(199, 193, 193); 
+        border-radius:10px;
+    }
+    #slide_show{
+        width:100%;
+        height:150px;
+         /* border:1px solid black;  */
+         border-radius:10px;
+       
+        display:fkex;
+    }
+    #slide_show > img{
+     width:100%;
+     height:180px;
+    }
+    button{
+        width:200px;
+        height:40px;
+        border-radius:20px;
+        cursor:pointer;
+        margin-left:10%;
+        background-color:orange;
+    }
+.image{
+    padding-left:70%;
+    margin-top:-100%;
+}
+.headings{
+    color:rgb(23, 59, 23);
+    margin:20px;
+    border:1px solid rgb(231, 225, 225);
+    width:96%;
+    height:50px;
+    margin-top:30px;
+    background-color:white;
+    border-radius:10px;
+}
+.container{
+         margin: 10px ;
+        max-width:1500px; 
+         border:1px solid black; 
+         padding:0;
+    }
+    /* .container > div{
+         /* border: 1px solid rgb(214, 209, 209);;   */
+         /* background-color: whitesmoke;
+       width:200px;
+        border-radius:20px; 
+    } */ 
     
+     
+    .image2{
+        width:80px;
+        height:80px;
+         margin-left: 10px; 
+    }
+    p{
+        text-align:center;
+        color:rgb(44, 59, 44);
+    }
+    h2{
+        color:rgb(10, 43, 10);
+    }
+    #store-products{
+        display:flex;
+         /* grid-template-columns:repeat(auto-fit,minmax(10rem,1fr));  */
+        /* column-gap:0rem; */
+        row-gap:1rem; 
+        /* column-gap:0rem; */
+    }
+     .store-productdabur{
+        border:1px solid rgb(216, 204, 204);
+        border-radius:20px;
+          max-width:13rem; 
+          margin:10px;
+     }
+     .product-details{
+       text-align:center;
+       background-color: ffffff;
+     }
+     .product-details h2{
+       font-size:1.0rem;
+       /* font-weight:400; */
+     }
+     .product-details p{
+         font-size:1rem;
+         /* padding-bottom:0.1rem; */
+       color:green;
+       font-weight:600;
+       
+     }
+     .product-details p span{
+          text-decoration: line-through; 
+         color:red;
+         /* font-weight:normal; */
+     }
+     .product-details a{
+          font-size:1.3rem;  
+          text-decoration:none; 
+         border-radius:5px;
+         color:orange;
+         /* border-bottom:20px; */
+         
+         
+     }
+     .product-details a:hover{
+         background-color:rgb(170, 167, 167);
+     }
+    #leftarrow ,#rightarrow{
+        margin-left:12px;
+        width:5%;
+        display:inline-block;
+        margin-top: 180px;
+        margin-left:10px;
+    }
+    #leftarrow button,#rightarrow button{
+        font-weight:bold;
+        cursor:pointer;
+        font-size:15px;
+    }
+    .div2{
+        display:flex;
+        margin:10px;
+        border: 1px solid black;
+        /* flex-direction:column; */
+        /* width:1000px; */
+
+    }
+    .div2 > div{
+        border:1px solid rgb(202, 200, 200);
+        width:150px;
+         height:80px; 
+         color:rgb(83, 94, 83);
+         margin:10px;
+         border-radius:10px;
+
+
+    }
+     .smallimages{
+        border:1px solid black;
+        display:flex;
+    }
+    .smallimages{
+     border:1px solid black;
+    
+     border:10px; 
+    } 
+    .small{
+        width:50px;
+        height:50px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .div3{
+        border:1px solid black;
+        display:flex;
+        margin:10px;
+    }
+   .div3 > div{
+   border:1px solid black;
+   margin:10px;
+   width:300px;
+   height:100px;
+    }
+    .image3{
+        width:300px;
+        height:90px;
+    }
+    .div4{
+        border:1px solid black;
+        margin:10px;
+        display:flex;
+
+    }
+    .div4 > div{
+        border:1px solid black;
+        width:400px;
+        height:100px;
+        margin:10px;
+    }
+    body{
+
+    width:70%;
+    border:1px  solid rgb(230, 223, 223);
+    margin-left:15%;
+    background-color:white;
+    border-radius:10px;
+    }
+</style>
+<body>
+
+    <div class = "search_bar">
+   <div>
+       <input style = "width:100%;";type = "text" placeholder="Search Meds, brands and more" class = "searchbar">
+       
+    </div>
+   <div>
+    <div><img style = "width:50px;height:50px; margin-left:10%"src =https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHxoM8WjrUEphrYTcY2Tc50MJCwtOfc6LOWw&usqp=CAU></div>
+     <div><h3 style = "color:grey;padding-left:30%;margin-top:-10%"> Special Offers</h3></div>
+   </div>
+    </div>
+
+    <div class = "slide">
+        <div id = "slide_show"></div>
+        <div>
+            <h4 style = "color:rgb(71, 100, 90);margin:10px;">Place your order via prescriptions</h4>
+         <button>Upload</button>
+         <h4 style = "color:rgb(71, 100, 90);margin-left:20px;margin-top:30px;">Your folder</h4>
+       <div>
+           <img class = "image" src = "https://newassets.apollo247.com/images/ic_prescription_pad.svg">
+       </div>
+        </div>
+    </div>
+   <div class = "headings"><h3>SHOP BY HEALTH CONDITIONS</h3></div>
+
+
+    <div class = "heading">
+        <div><img src = https://newassets.apollo247.com/images/pharmacy_logo.svg style = "width:70px;height:70px;"></div>
+     <div><h4 style = "color:green">Yay! <h5 style = "color:rgb(6, 82, 6)">Now you can </h5></h4>
+       <h2 style = "color:orange">WHATSAPP</h2>
+       <h3 style = "color:green;font-size:20px;">TO<h1> ORDER</h1></h3></div>
+       <div>
+           <h5 style = "color:rgb(8, 97, 8)">You can get <h2 style = color:green>10% CASHBACK</h2> on your first order</h5>
+            <h2 style = "color: green">+FREE DELIVERY.</h2>
+            <input type = "box" value = "Whatsapp @+91-4048218743" style = "padding:15px;text-align:centr;width:300px;background-color:orange;margin:10px;cursor:pointer;user-select: https://newassets.apollo247.com/images/ic-whatsapp.png;";>
+         
+        </div>
+      <div><img src = "https://newassets.apollo247.com/images/whatsUpBaner.png" style = "width:100px;height:100px; margin"></div>
+    </div>
+
+    <div class = "div2">
+        <div class = "smallimages">
+            <div>
+                <img src="..\blogimages\medicine.jfif" class = "small">
+            </div>
+            <div>
+                <p>Ayurvedic</p>
+            </div>
+        </div>
+        
+          <div class = "smallimages">
+              <div>
+                  <img src="..\blogimages\omicran.jfif" class = "small">
+              </div>
+              <div>
+                  <p>covid Essent</p>
+              </div>
+        </div>
+  
+          <div class = "smallimages">
+              <div>
+                  <img src="..\blogimages/otc.webp" class = "small">
+              </div>
+              <div>
+                  <p>OTC</p>
+              </div>
+        </div>
+        
+          <div class = "smallimages">
+              <div>
+                  <img src="..\blogimages\sexualhealth.png" class = "small">
+              </div>
+              <div>
+                  <p>Sexual Wellness</p>
+              </div>
+        </div>
+        
+          <div class = "smallimages">
+              <div>
+                  <img src="..\blogimages\devices.jfif" class = "small">
+              </div>
+              <div>
+                  <p>Health Devices</p>
+              </div>
+        </div>
+        
+          <div class = "smallimages">
+              <div>
+                  <img src="..\blogimages\menshealth.png" class = "small">
+              </div>
+              <div>
+                  <p>Mens Health</p>
+              </div>
+              </div>
+              </div>
+              <div><h3>EXPLORE-POPULAR PRODUCTS</h3></div>
+              <div class = "div3">
+                  <div>
+                      <img src = "..\blogimages\247_baby_care_dod1.webp" class = "image3">
+                  </div>
+                  <div>
+                    <img src = "..\blogimages\247_cardiac_care_dod3.webp" class = "image3">
+        
+                  </div>
+                  <div>
+                    <img src = "..\blogimages\Inlife_dod2_247.webp" class = "image3">
+        
+                  </div>
+              </div>
+         
+    
+    <div class = "para">
+        <h3>EFFORTLESS ONLINE MEDICINE ORDERS AT APOLLO PHARMACY</h3>
+        <p>Because ordering medicines online need not be complicated but rather a cakewalk. And at Apollo Pharmacy we ensure that.All you need to do Is:
+            Broese through our wide variety of products
+            Add products to your cart and complete the payment. Voila!
+            Your order will be on its way to you.
+            Apollo Pharmacy is your go-to online pharmacy store for all medicine needs- be it your regular medications,or ever-the counter(otc)medicines.We also have a range of
+            products in the personal care,baby care,health and nutrition,wellness,and lifestyle categories,Come explore everything under the sun' related to healthcare at Apollo Pharmacy.
+        </p>
+    </div>
+    <div class = "para">
+        <h3>Reasons To Buy Medicine From Apollo Pharmacy</h3>
+        <p>For over 32 years, Apollo Pharmacy has been providing with genuine medicines round-the-clock,through 24-hour pharmacies,
+            And now through Apollo Pharmacy,we intend to make your lives easier - by getting your medicines deliverd to you .Yes,no more stepping out to get your medicibes,no more standing in long quesues,no more worrying about the genuiness of medicines,no more sweat!Here are more reasons why you
+            should buy your medicines from Apollo Pharmacy.Super-fast deleveries.In select
+
+        </p>
+    </div>
+
+    <div class = "para">
+        <h3>Most Trusted Online Medical Store ofIndia</h3>
+        <p>As pioneers in the healthcare segment, we understand the importance of trust. And that is why, 
+            over the years, we worked on building that trust. We ensure that every product sold through our
+             offline/online stores are checked for their authenticity, quality, and compliance with the Central Drugs Standard Control Organization, the national regulatory body for Indian pharmaceuticals and medical devices.</p>
+    </div>
+    
+    <section>
+        <div class = "div1">
+        <h2 class = "title">Frequently Asked Question</h2>
+        <div class = "faq">
+            <div class = "question">
+                <h3>what is javascript?</h3>
+                <svg width="15" height = "10" viewBox="0 0 42 25">
+                    <path d = "M3 3L21 21L39 3"  stroke = "white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+                </div>
+                <div class = "answer">
+                    <p>
+                        Javascript,often abbreviated as JS,is a programming language
+                         that conforms to the script specialization javascript is high-level,often just-in time.
+                    </p>
+                </div>
+ </div>
+                <div class = "faq">
+                <div class = "question">
+                    <h3>how to order medicines online from Apollo Pharmacy?</h3>
+                    <svg width="15" height = "10" viewBox="0 0 42 25">
+                        <path 
+                        d = "M3 3L21 21L39 3" 
+                        stroke = "white"
+                        stroke-width="7"
+                         stroke-linecap="round"/>
+                    </svg>
+                    </div>
+                    <div class = "answer">
+                        <p>
+                            Javascript,often abbreviated as JS,is a programming language
+                             that conforms to the script specialization javascript is high-level,often just-in time.
+                        </p>
+                    </div>
+                    </div>
+                    <div class = "faq">
+                    <div class = "question">
+                        <h3>Is online medicine delivery safe?</h3>
+                        <svg width="15" height = "10" viewBox="0 0 42 25">
+                            <path d = "M3 3L21 21L39 3"  stroke = "white" stroke-width="7" stroke-linecap="round"/>
+                        </svg>
+                        </div>
+                        <div class = "answer">
+                            <p>
+                                Javascript,often abbreviated as JS,is a programming language
+                                 that conforms to the script specialization javascript is high-level,often just-in time.
+                            </p>
+                        </div> 
+            </div>
+        
+
+            <div class = "faq">
+                <div class = "question">
+                    <h3>How can I buy prescribed medicines online through Apollo Pharmacy?</h3>
+                    <svg width="15" height = "10" viewBox="0 0 42 25">
+                        <path d = "M3 3L21 21L39 3"  stroke = "white" stroke-width="7" stroke-linecap="round"/>
+                    </svg>
+                    </div>
+                    <div class = "answer">
+                        <p>
+                            Javascript,often abbreviated as JS,is a programming language
+                             that conforms to the script specialization javascript is high-level,often just-in time.
+                        </p>
+                    </div> 
+        </div>
+    
+
+        <!-- <div class = "faq"> -->
+            <div class = "question">
+                <h3>Can Apollo Pharmacy provide express delevery?</h3>
+                <svg width="15" height = "10" viewBox="0 0 42 25">
+                    <path d = "M3 3L21 21L39 3"  stroke = "white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+                </div>
+                <div class = "answer">
+                    <p>
+                        Javascript,often abbreviated as JS,is a programming language
+                         that conforms to the script specialization javascript is high-level,often just-in time.
+                    </p>
+                </div> 
+    <!-- </div> -->
+
+    </section>
+    </div>
+    <script>
+ let images = [
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkYzwK5-Ejc-gcV7uYPfmmQKAHqcsUvtlqRA&usqp=CAU',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgaWDnHxnC8tn6OIqWn0EWzD63BKg_PsElwg&usqp=CAU',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0zvm9p0gefuoJeZEvzHzx2nnjq_AZWeX-Kg&usqp=CAU',
+        ]
+        let container = document.getElementById('slide_show')
+        function start(){
+            let count =0;
+            setInterval(function(){
+                container.innerHTML=null
+                if(count === images.length){count =0;}
+                let img = document.createElement('img')
+                img.src = images[count]
+                container.append(img)
+                count++;
+            },2000)
+        }
+    start()
+
+        const faqs = document.QuerySelectorAll(".faq");
+    
+        faqs.forEach((faq) => {
+         faq.addEventListener("click",()=> {
+             faq.classList.toggle("active");
+         });
+        });
+    </script> 
 </body>
+
 </html>
+ 
