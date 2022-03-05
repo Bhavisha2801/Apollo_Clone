@@ -1,0 +1,31 @@
+#footer {
+    color: white;
+    background-color: black;
+    padding: 5px;
+  }
+  #icon {
+    text-align: center;
+  }
+  h4 {
+    color: orange;
+    margin-left: 10px;
+  }
+  #footer > ul {
+    overflow: hidden;
+  }
+  #footer > ul > li {
+    display: inline-block;
+    color: white;
+    list-style-type: circle;
+    margin: 5px;
+  }
+  ul li::before {
+    content: "\2022";
+    color: white;
+  }
+  
+  
+  
+  
+  
+  

@@ -7,13 +7,19 @@
     <title>Doctors</title>
     <link rel="stylesheet" href="style/Doctors.css">
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="footerF.css">
     <script src="https://kit.fontawesome.com/41f4571c87.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <hr />
     <div class="main">
 
+
+
         <div id="header"></div>
+
+
+        <hr />
+
 
         <div id="above">
             <div id="first">
@@ -622,7 +628,7 @@
             <div id="second">
                 <div id="second-fir">
                     <h3>Why Apollo</h3>
-                    <ul>
+                    <ul id="dott">
                         <li>Round-the-clock doctor availability</li>
                         <li>Broad range of Specialities</li>
                         <li>Detailed digital prescriptions</li>
@@ -883,6 +889,9 @@
             </div>
         
 
+            <div id="lastPart"></div>
+
+
     </div>
 </body>
 </html>
@@ -918,4 +927,10 @@
     let header = document.getElementById("header");
     import navbar from "./navbar_before_login.js";
     header.innerHTML = navbar();
+
+
+    let foot = document.getElementById("lastPart");
+    import footer from "./footerF.js";
+    foot.innerHTML = footer();
+
 </script>

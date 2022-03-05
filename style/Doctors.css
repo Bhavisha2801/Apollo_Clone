@@ -130,7 +130,7 @@ body{
 }
 .inside-flex > div > i{
     margin-top: 400%;
-    margin-left: 250%;
+    margin-left: 220%;
 }
 .inside-text > p{
     color: grey;
@@ -148,7 +148,7 @@ body{
 #Boxes{
     width: 80%;
     display: grid;
-    grid-template-columns: 60% 60%;
+    grid-template-columns: 61% 61%;
     gap: 1%;
     padding: 1%;
     margin-top: 3%;
@@ -164,6 +164,11 @@ body{
 }
 #first > hr{
     width: 100%;
+}
+
+#second-fir > #dott > li{
+    color: #0e5d74;
+    /* list-style: dotted; */
 }
 #second-thir > .info{
     display: flex;
