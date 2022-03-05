@@ -47,6 +47,7 @@
             box-shadow: 0 2px 10px 0 rgb(0 0 0 / 10%);
             align-items: center;
             background-color: #fff;
+            padding-left: 20px;
         }
 
         .logo img {
@@ -98,7 +99,7 @@
             padding-top: 15px;
             color: white;
             width: 90px;
-            height: 65px;
+            height: 60px;
             border-radius: 50%;
         }
 
@@ -115,10 +116,11 @@
             font-weight: 700;
         }
 
+
         .left .paragraph {
             color: #81d0f0;
             font-size: 15px;
-            margin-right: 120px;
+            padding-right: 80px;
             /* letter-spacing: 2px; */
         }
 
@@ -139,27 +141,28 @@
             grid-column-end: 3;
             display: flex;
             background: linear-gradient(to right, #2d4d71, #5ba6ac);
-
+            border-radius: 8px;
             padding: 6px;
         }
 
         .c {
             display: flex;
-
+            border-radius: 8px;
             box-shadow: 0px 2px 3px gray;
+            width: 180px;
         }
 
         .a img {
             height: 30px;
+            padding: 7px
         }
 
         .c img {
-            height: 30px;
+            height: 35px;
+            padding: 7px;
         }
 
-        .second {
-            height: 700px;
-        }
+
 
         .third {
             display: flexbox;
@@ -178,33 +181,18 @@
             margin-inline-end: 0px;
         }
 
-        /* .slideshow {
-            width: 70%;
-            height: 300px;
-            background-image: url(slide-1.webp);
-            background-size: 100% 100%;
-            animation: slider 12s infinite alternate;
-        }
-        @keyframes slider{
-            0%{background-image: url(slide-1.webp);}
-            25%{background-image: url(slide-2.jpg);}
-            50%{background-image: url(slide-3.webp);}
-            750%{background-image: url(slide-4.lnk);}
-            100%{background-image: url(slide-5.webp);}
-        } */
-
-
         .slider {
             max-width: 700px;
-            border: 10px solid #29a8e2;
+            /* border: 10px solid #29a8e2; */
             margin: 80px auto;
-            position: relative;
+            /* position: relative; */
             overflow: hidden;
+            box-shadow: 0 2px 10px 0 rgb(0 0 0 / 10%);
         }
 
         .slider .left-slide,
         .slider .right-slide {
-            position: absolute;
+            /* position: relative; */
             height: 40px;
             width: 40px;
             background-color: #444444;
@@ -227,11 +215,11 @@
         }
 
         .slider .left-slide {
-            left: 30px;
+            left: -30px;
         }
 
         .slider .right-slide {
-            right: 30px;
+            right: -30px;
         }
 
         .slider .slider-items .item img {
@@ -279,7 +267,7 @@
             display: block;
         }
 
-        .jss {
+        /* .jss {
             min-height: 150px;
         }
 
@@ -291,7 +279,7 @@
             box-shadow: 0 5px 20px 0 rgb(128 128 128 / 30%);
             border-radius: 10px;
             background-color: #fff;
-        }
+        } */
 
         .jss5 {
             /* display: contents; */
@@ -308,10 +296,46 @@
 
         .jss6 {
             display: flex;
+            padding: 5px;
+            background-color: #ffffff;
+            box-shadow: 0 5px 20px 0 rgb(128 128 128 / 30%);
+            margin-right: 20px;
+            border-radius: 8px;
+            width: 200px;
+            padding-top: 8px;
+        }
+
+        .jss6 img {
+            width: 25px;
+
         }
 
         .jss7 {
             display: flex;
+
+        }
+
+        .jss8 img {
+            display: flex;
+            width: 92%;
+            height: 200px;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 18px;
+            padding-bottom: 18px;
+            /* padding: 30px; */
+        }
+
+        .jss9 {
+
+            /* height: 120px; */
+
+            padding-left: 40px;
+        }
+
+        .jss9 img {
+            width: 92%;
         }
 
         #slide1 {
@@ -327,7 +351,7 @@
         }
 
         /* Next & previous buttons */
-        .prev {
+        /* .prev {
             cursor: pointer;
             position: absolute;
             top: 50%;
@@ -354,7 +378,57 @@
             font-size: 58px;
             transition: 0.6s ease;
             border-radius: 0 3px 3px 0;
+        } */
+
+        .slider {
+            display: flex;
+            width: 950px;
+            height: 150px;
+
         }
+
+        .slider>slide1_img {
+            width: 100%;
+            height: 100%;
+            background-image: cover;
+        }
+
+        .jss11 {
+            /* justify-content: center; */
+            align-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #ffffff;
+            padding-top: 12px;
+            padding: 15px;
+        }
+
+        /* .icon-article:before {
+            content: "\e94a";
+            color: #fc9916;
+            width: 24px;
+            height: 24px;
+        } */
+        .jss12 {
+            /* display: grid;
+            justify-content: end; */
+            padding: 5px;
+            
+            box-shadow: 0 7px 30px 0 rgba(95, 95, 95, 0.3);
+        }
+        .jss13 {
+            display: grid;
+            justify-content: end;
+        }
+        .jss14 {
+            
+            letter-spacing: 0.01ch;
+            font: 1em sans-serif;
+            font-weight: 650;
+            font-size: 15px;
+            color: #07ae8b;
+        }
+
     </style>
 </head>
 
@@ -406,7 +480,7 @@
 
                     <div class="slider">
                         <!-- <div class="slider-items"> -->
-                            <!-- <div class="item active">
+                        <!-- <div class="item active">
                             <img src="slide-1.webp">
                             <div class="caption">
                                 Slide 1
@@ -424,12 +498,12 @@
                                 Slide 3
                             </div>
                         </div> -->
-                            <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a> -->
-                            <!-- <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+                        <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a> -->
+                        <!-- <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
                         <!-- </div> -->
                         <!-- slider controls -->
-                        <!-- <div class="left-slide">&lt;</div> -->
-                        <!-- <div class="right-slide">&gt;</div> -->
+                        <div class="left-slide" onclick="plusSlides(-1)">&lt;</div>
+                        <div class="right-slide" onclick="plusSlides(1)">&gt;</div>
                         <!-- slider controls -->
                     </div>
                 </div>
@@ -446,11 +520,13 @@
                                 <img src="faq.jfif" alt="">
                             </div>
                             <div>
-                                <p>FAQs & Articles</p>
+                                FAQs & Articles
                             </div>
                         </div>
                         <div class="jss6">
-                            <div></div>
+                            <div>
+
+                            </div>
                             <div>Vaccination Queries</div>
                         </div>
                         <div class="jss6">
@@ -463,6 +539,25 @@
                         </div>
                     </div>
                 </div>
+                <div class="jss8">
+                    <img src="prohealthSliderTwo.webp" alt="">
+                </div>
+                <div class="jss9">
+                    <img src="ecosystem-banner.webp" alt="">
+                    <div class="jss11">
+                        <span class="jss14">HEALTH BLOG</span> <br>
+                        Explore healthcare content created every day by our experts.
+                        <div class="jss13">
+                            <div class="jss12">
+                                <span class="icon-article">
+    
+                                </span>
+                                Read the latest Articles
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <div class="third">
                 <h6>Apollo 24|7 - Your Most Trusted Healthcare Brand</h6>
@@ -582,7 +677,8 @@
                     that combines predictive risk assessments and top-notch quality diagnostics with accurate physician
                     checks. Approximately 22 million health checks have been done based on this program. You can count
                     on us
-                    for </p>
+                    for
+                </p>
                 <li>Customised health risk assessments: diagnostic tests designed exclusively for your profile to
                     foresee
                     the health risks.</li>
@@ -653,7 +749,7 @@
 
         let x;
         let slide1 = document.querySelector(".slider")
-        let slide1_img = ['slide-1.webp', 'slide-2.jpg', 'slide-3.webp','slide-4.ink','slide-5.webp']
+        let slide1_img = ['slide-1.webp', 'slide-2.jpg', 'slide-3.webp', 'slide-5.webp', 'slide-6.webp']
 
         let img = document.createElement("img");
         img.className = "images_slid1"
@@ -689,32 +785,7 @@
     </script>
     <script type="module">
         let header = document.getElementById("header");
-        function navbar() {
-            return `<div class="fixed_header">
-            <div class="navbar">
-                <div class="logo">
-                    <img src="https://newassets.apollo247.com/images/ic_logo.png" alt="logo">
-                </div>
-                <div class="options">
-                    <p><a href="Doctors.html">Doctors</a> <br> <span class="line"></span> <a>Consult <br> Online</a>
-                    </p>
-                    <p><a href="Pharmacy.html">Pharmacy</a> <br><span class="line"></span> <a>Medicnes & <br> other
-                            products</a> </p>
-                    <p><a href="Lab_Tests.html">Lab Tests</a> <br> <span class="line"></span> <a> Health
-                            <br>check-ups</a> </p>
-                    <p><a href="Covid_19.html">Covid 19</a> <br> <span class="line"></span> <a>Latest <br>Updates</a>
-                    </p>
-                    <img id="img"
-                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAeFBMVEX///8AAACUlJSysrLCwsL7+/s6OjrPz8/l5eVycnLy8vL39/fb29vs7OzMzMwzMzN5eXlsbGy5ubl/f38PDw9RUVFnZ2cVFRVXV1fn5+eKiookJCTY2Nienp5CQkKurq5JSUmampooKCgcHBxeXl6lpaVFRUWHh4dF7E2EAAAFy0lEQVR4nO2d6VbiQBCFEySiJICyDDgIghvv/4bj6AwDUqR7qOV2cur77eHUNUt331qSZY7jOI7jOI7jOI7jtItq2KthiA5PgB95LVfo+Pjc1iscoePjE1CYd9EBsgkp3KADZBNSmDf+ZRNUuEBHyCWoMK/QITIJK/yBDpFJWGF+g46RR4TCO3SMPCIU5g/oIFnEKPyJDpJFjMK8j46SQ5TCLTpKDlEKc3SUHOIUvqHDZBCncIkOk8F9lMImn4THne9snwmFo+3J38FY9bjv9qe4ywpkPhnwJKIFxMDzHt7Q4cfAejOUU3T4MbDOrVt09DGsOQr7jbiIjxyJP9HRx8A68gzQ0cfwzlGY3aHDj4DnxzfhIjIzDnE7cigznsIKHX8Y7rn8FS0gCNfl7KEFhOA71TO0hAB8o3qIllDPji0wy0ZoEXVMJRzOLlpFHSsBgUlfxBcRgdkVWsd5hJyxItmLeC0jMGE7Q6y4IFU741VKYLJ2hmBpQYHWQiKalE7SzhBNZ6Z4Eu5ICsyyCVrPCdNCVuENWtAJT7IC07MzxBb7PanZGQrloGnZGUz7ieQRLeoIlTrClOwMnTLClOwMpQK0dC6i8GK/Jxk7Y65WfpbKSVjGnKEYo6V9oVm3lMZJWLP3Iwk7g5cRDZDESbinqTBboeXl+b2qwKw/RwtUbxnooAVOlAXi7YxSWyHaztBb7PdgL+JS2JwhgdoZJjXKSE9KdbH/R2RJuAZGbZ44O8Osy3OBUmjWH4gqsTFsD1xjFDIL8/8HjJ2hZc6QIOyMpf5+7QCEnSGeiakFUJ3xbCoQ0TFkPZijWBoLtB/pYG1nsJoqLsNW4K29QGM7AzEKoG8pEDMJYGeo0OJkf8qDnUBUC7lZx5D1Yr/HzM4YoxSGZrxJsYEJtDoJ62ZiarExhwXLZP8Xo+cQOPfH5jFUz8Scx+gpBE792ZgItD3ZH2HjRiGHxJkkg0eYDeknJifgkam9dozJtIUFUKBJd4KpA/wdg5PTDDtrUzuFOL8FOE+H0FXt1yKsF/cd9gAoNuRiP8kKEdDifkMv9vD/uyDXlECDQhczyJyFbe5Ll+KFUgjcIYtDmt0tmEq/h/a6Gz/P/ADSJW38OPMD6MW+6dPMDyE72Bo+B/sI2pwxLHRRh/TXoMccYegXKToqScjtTJsWe/JcKN9yjIRyZ1p1CckCjDathfSLBphYkIc2oO67luie0kwrTM6gXAmNlpe7QjawKn0zhQl0ySorTGBKjXbPhU3iF6kQ35Gv3jdDusGtUggfcKLf+4SeYW7Q3QW+Tw0U9rETTiw69Aag1jU7hVlhVFiKU/ixLJL5pzYpzMqVdVuQtcIPjd07yIW0/VZo2RtfGfPUolyz4ziO4zSE/k1VVTdaWfzB568DCwKrzuxrbzpfT+Sb5YeT9Vc3wHLWwVTTdo+/wzrdSu6mitVxKvbZvgOxR5zz5XLBxDdRRsYtenSn+qvMI1PS52vTdu5zR/xniZPN4JwNZFg7VzMwmS+xZuDd2qoEvM6kYX9fqnaiiNFVrE+wcYOo97hMystC+TXecIDQl6UsVsZgFpizwylDLX8bIRU1hFtjOW/1cMuf/qShiMGXjF8Pt/ypt66XYYGMGQ8xmTvtYt2YFPDlrbsxEwy0x5xEzaS5+NdjbHTt1ueo3OGlG5uYRyCfiuo5JSaGi7tL4uaiiuo5JSqGS9/ocUMalM/8qgrjiiCUB4GoKmzONWz0c9j+d2n710PdPU3M/0+796H9+9KYYQoMNyV8ttA3Mtp/Pgx/I5CzXpWh6g6NbwJ+p/0+Tfu9tsB9ys3P0OMM/mBxj35SY7cJeN7n7TYzgcp5i4dzeYtXy7kudO5pIZR7oh+DnciPR/N4ugWfCuYPT1f+a/sRn+P34xt0JZkDLlfHt+oaM4W26vx95ax3Q+lnpBju/tZaLzrAPtyiX/WqgdYboBh8/Ho/iblRjuM4juM4juM4juOg+QXKp2xKG8AhJQAAAABJRU5ErkJggg=="
-                        alt="">
-                    <img class="user-profile" src="user-profilee.webp" alt="user-profile">
-
-
-                 </div>
-                </div>
-            </div>`;
-            
-        }
+        import navbar from "./navbar_before_login.js";
         header.innerHTML = navbar();
     </script>
 
