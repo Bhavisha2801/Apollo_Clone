@@ -1,6 +1,13 @@
+* {
+  border-radius: 5px;
+}
 body {
   background-color: #e5e3c9;
-  margin: 0px 20px 0 20px;
+}
+#main {
+  width: 1067px;
+  margin: auto;
+  background-color: white;
 }
 #appointment-box {
   background-color: #fff;
