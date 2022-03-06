@@ -7,11 +7,18 @@
     <title>Pharmacy</title>
     <link rel="stylesheet" href="pharmacy.css">
     <script src="https://kit.fontawesome.com/41f4571c87.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="footerF.css">
+    <!-- <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&family=Roboto:wght@300&display=swap');
+        </style> -->
 </head>
 <body>
     <div class="main">
 
 
+            <div id="header"></div>
 
              <div id="firstPart" style="display: grid;
              grid-template-columns: 60% 20%;gap: 10%;margin-bottom: 7%;">
@@ -399,9 +406,12 @@
             </div>
             </div>
 
+            <div id="lastPart"></div>
 
 
     </div>    
+
+    <div id="log"></div>
     <script>
 
 var list1 = [
@@ -755,31 +765,24 @@ let images = [
             localStorage.setItem("cart", JSON.stringify(cart))
            
        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </script>
 </body>
 </html>
+
+
+
+<script type="module">
+  
+    let header = document.getElementById("header");
+      import navbar from "./navbar_before_login.js";
+      header.innerHTML = navbar();
+  
+      let log = document.getElementById("log");
+      import login from "./import_login.js";
+      log.innerHTML = login();
+
+      
+    let foot = document.getElementById("lastPart");
+    import footer from "./footerF.js";
+    foot.innerHTML = footer();
+  </script>
