@@ -63,7 +63,7 @@ option,
   font-size: 16px;
   font-weight: bold;
 }
-<<<<<<< HEAD
+
 
 .open-button {
   background-color: #555;
@@ -133,7 +133,7 @@ option,
 /* Add some hover effects to buttons */
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
-=======
+}
 .group:after {
   content: "";
   display: block;
@@ -253,5 +253,4 @@ option,
 span.wpcf7-list-item {
   display: block;
   margin-left: -0.02em;
->>>>>>> 86959128a0181191aab54ef89bbb708a4afce728
 }
