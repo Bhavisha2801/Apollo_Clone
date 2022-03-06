@@ -5,8 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart Page</title>
+    <link rel="stylesheet" href="login.js">
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 <style>
+    body {
+    background-color: #dcdfce;
+    /* margin: 0; */
+    font-size: 0.875rem;
+    /* font-family: IBM Plex Sans, sans-serif; */
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.43;
+    word-spacing: 3px;
+    
+}
+
+.main {
+    width: 1050px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f7f8f5;
+    box-shadow: 0px 2px 3px gray;
+    margin-top: -8px;
+    
+
+}
+    
     img{
         height: 100px;
         width: 100px;
@@ -31,7 +60,14 @@
     }
 </style>
 <body>
+
+
+    <div id="goBack" style="display: flex;gap: 10%;">
     <div id="container"></div>
+    <div id="gobackbtn"><a href="apolo.html"><img style="width: 70%;height: 60px; margin-left: 100%;" src="https://newassets.apollo247.com/images/ic_logo.png" alt=""></a></div>
+    </div>
+
+    <div id="log"></div>
 </body>
 </html>
 
@@ -144,9 +180,17 @@ getData();
     }
 
 
+</script>
 
 
+<script type="module">
+    let header = document.getElementById("header");
+    import navbar from "./navbar_before_login.js";
+    header.innerHTML = navbar();
 
 
+    let log = document.getElementById("log");
+    import login from "./import_login.js";
+    log.innerHTML = login();
 
 </script>
