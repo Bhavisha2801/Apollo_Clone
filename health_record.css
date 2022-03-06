@@ -1,6 +1,6 @@
 * {
   font-family: sans-serif;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 body {
   background-color: #e5e3c9;
@@ -14,10 +14,12 @@ body {
 #search-box {
   display: flex;
   flex-direction: row-reverse;
+  margin-top: 2%;
 }
 #search-box > button {
   color: #835eeb;
   font-weight: bold;
+  margin-left: 5px;
 }
 #navbar_after_login {
   height: 50px;

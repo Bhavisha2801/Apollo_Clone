@@ -42,13 +42,29 @@
         <div>
           <span>
             <h3>Want to book an appointment? <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ44GIWPh4x6Co0LjkSG1QrfS4hz-T0ZLIA3A&usqp=CAU" alt=""></h3>
-            <button id="btn" placeholder="BOOK AN APPOINTMENT">
+            <button id="btn" onclick="myFunction()" placeholder="BOOK AN APPOINTMENT">
               BOOK AN APPOINTMENT
             </button>
           </span>
          
         
     </div>
+
+    <div id="appointment_popup"></div>
   </body>
+
+  
 </html>
+
+<script type="module">
+
+import appointment from "./import_appointment.js"
+
+let appointment_popup = document.getElementById("appointment_popup") ;
+
+appointment_popup.innerHTML = appointment();
+
+
+</script>
+
 
