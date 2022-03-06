@@ -26,15 +26,12 @@ body {
   font-family: sans-serif;
   font-weight: bold;
 }
-/* p {
-  margin-left: 500px;
-} */
 #booking-box {
   height: 150px;
   width: 300px;
   border: 1px solid rgb(247, 238, 238);
   border-radius: 3%;
-  margin: 10px auto 10px 600px;
+  margin: 10px auto 10px 400px;
   padding: 10px;
 }
 #btn {
@@ -78,14 +75,26 @@ option,
   width: 280px;
 }
 
+
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
 /* The popup form - hidden by default */
 .form-popup {
   display: none;
-  position: absolute;
-  top: 30%;
-  right: 40%;
-  bottom: 50%;
-  left: 40%;
+  position: fixed;
+  top: 12%;
+  right: 233px;
   /* border: 3px solid #f1f1f1; */
   z-index: 9;
 }
@@ -94,8 +103,9 @@ option,
 .form-container {
   max-width: 300px;
   padding: 10px;
+
   background-color: rgb(179, 174, 174);
-  border-radius: 5%;
+  border-radius: 4%;
 }
 
 /* Full-width input fields */
@@ -129,129 +139,6 @@ option,
 .form-container .cancel {
   background-color: rgb(119, 47, 47);
 }
-
-/* Add some hover effects to buttons */
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
-}
-.group:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-.landing-page {
-  width: 882px;
-  margin: 100px auto 0;
-}
-
-.landing-page *,
-.landing-page *:before,
-.landing-page *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.landing-page .module {
-  border: 1px solid rgb(219, 219, 219);
-  border-radius: 4px;
-  float: left;
-  padding: 2em;
-  width: 48%;
-}
-
-.landing-page .module > *:last-child,
-.landing-page .module > *:last-child > *:last-child,
-.landing-page .module > *:last-child > *:last-child > *:last-child {
-  margin: 0;
-  padding: 0;
-}
-
-.landing-page .note {
-  background-color: rgb(236, 248, 236);
-  border: 1px dashed;
-  border-radius: 4px;
-  color: rgb(115, 136, 96);
-  font-family: georgia;
-  font-size: 0.9em;
-  font-style: italic;
-  margin: 20px auto;
-  padding: 2em;
-}
-
-.form-appointment {
-  padding: 2em;
-  background-color: rgb(239, 252, 239);
-  border-radius: 4px;
-  border: 1px solid rgb(130, 228, 130);
-  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.1);
-  font-family: "PT Sans", Arial, sans-serif;
-  margin: 20px auto;
-}
-
-.form-appointment input[type="text"],
-.form-appointment input[type="email"],
-.form-appointment input[type="tel"],
-.form-appointment textarea {
-  border: 1px solid rgb(153, 202, 129);
-  border-radius: 0.2em;
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 1.1em;
-  padding: 0.4em 1em;
-  margin: 0 0 0.8em;
-  width: 100%;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08) inset;
-}
-
-.form-appointment input[type="text"],
-.form-appointment input[type="email"],
-.form-appointment input[type="tel"],
-.form-appointment input[type="submit"],
-.form-appointment textarea {
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-.form-appointment input[type="text"]:active,
-.form-appointment input[type="text"]:focus,
-.form-appointment input[type="email"]:active,
-.form-appointment input[type="email"]:focus,
-.form-appointment input[type="tel"]:active,
-.form-appointment input[type="tel"]:focus,
-.form-appointment textarea:active,
-.form-appointment textarea:focus {
-  outline: 0;
-  box-shadow: 0 0 6px rgb(176, 226, 188);
-}
-
-.form-appointment textarea {
-  height: 160px;
-}
-
-.form-appointment input[type="submit"] {
-  background-color: rgb(118, 207, 118);
-  border: 1px solid rgb(134, 189, 134);
-  border-radius: 4px;
-  color: rgb(255, 255, 255);
-  cursor: pointer;
-  font-family: inherit;
-  font-size: 1.4em;
-  padding: 10px 18px;
-}
-
-.form-appointment input[type="submit"]:hover {
-  background-color: white;
-  color: rgb(118, 207, 118);
-}
-
-.form-appointment .wpcf7-list-item-label {
-  color: rgb(130, 178, 136);
-}
-
-span.wpcf7-list-item {
-  display: block;
-  margin-left: -0.02em;
-
 }
