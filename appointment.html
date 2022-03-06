@@ -1,83 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appointment Page</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="appointment.css" />
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="footerF.css">
+  </head>
+  <body>
+    <div class="navbar_after_login"></div>
+    <br />
+    <br />
+<div class="main">
+  
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Appointment Page</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-  <link rel="stylesheet" href="stylesheet.css">
-  <link rel="stylesheet" href="appointment.css" />
 
-</head>
-
-<body>
-  <div class="main">
-    <div id="header"></div>
-
-    <!-- <br />
-  <br /> -->
+  <div id="header"></div>
 
     <h1>All Appointments</h1>
     <div id="appointment-box">
       <div id="select_patient">
-
         <span class="selected_patient">
           <select id="patients" placeholder="All Patient">
-            <option>All Patient</option>
-            <option>Rajan</option>
-            <option>Bhavisha</option>
-            <option>Lucky</option>
-            <option>Madavi</option>
-            <option>Add Patient</option>
+              <option>All Patient</option>
+              <option>Rajan</option>
+              <option>Bhavisha</option>
+              <option>Lucky</option>
+              <option>Madavi</option>
+              <option>Add Patient</option>
           </select>
-
         </span>
-        <span class="selected_patient">Select Patient</span>
+        <span class="selected_patient">Select Patient</span>    
       </div>
       <hr />
       <br />
       <!-- Add want to book an appointment text -->
-      <div id="booking-box">
-        <div class="booking-box">
+      <div id="booking-box" style="margin-right: -50%;">
+        <div>
           <span>
-            <h3>Want to book an appointment? <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ44GIWPh4x6Co0LjkSG1QrfS4hz-T0ZLIA3A&usqp=CAU"
-                alt=""></h3>
-            <button id="btn" onclick="myFunction()" placeholder="BOOK AN APPOINTMENT">
-              BOOK AN APPOINTMENT
-            </button>
+            <h3>Want to book an appointment? <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ44GIWPh4x6Co0LjkSG1QrfS4hz-T0ZLIA3A&usqp=CAU" alt=""></h3>
+            <button id="btn" placeholder="BOOK AN APPOINTMENT" onclick="openForm()">BOOK AN APPOINTMENT</button>
           </span>
-
-
         </div>
+      </div>  
 
-        <div id="appointment_popup"></div>
-      </div>
+          <div id="lastPart" style="margin-top: 10%;"></div>
+
+
+          
+        
     </div>
 
+
+    <div id="appointment_popup"></div>
+
+
+  </div>
     <div id="log"></div>
 
-</body>
 
+  </body>
 
+  
 </html>
 
+
+
+
+
+<script src="appointment.js"></script>
+
 <script type="module">
-  let header = document.getElementById("header");
-  import navbar from "./navbar_before_login.js";
-  header.innerHTML = navbar();
 
-  // import appointment from "./import_appointment.js"
+import appointment from "./import_appointment.js"
 
-  // let appointment_popup = document.getElementById("appointment_popup");
+let appointment_popup = document.getElementById("appointment_popup") ;
 
-  // appointment_popup.innerHTML = appointment();
+appointment_popup.innerHTML = appointment();
 
-
-  let log = document.getElementById("log");
-  import login from "./import_login.js";
-  log.innerHTML = login();
 
 </script>
+
+
