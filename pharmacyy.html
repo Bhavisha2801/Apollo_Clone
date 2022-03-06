@@ -6,40 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pharmacy</title>
     <link rel="stylesheet" href="pharmacy.css">
+    <script src="https://kit.fontawesome.com/41f4571c87.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="main">
 
 
 
-        <div class = "search_bar">
-            <div>
-                <input style = "width:100%;";type = "text" placeholder="Search Meds, brands and more" class = "searchbar">
-                
+             <div id="firstPart" style="display: grid;
+             grid-template-columns: 60% 20%;gap: 10%;margin-bottom: 7%;">
+                <div id="searchSlide">
+                    <div id="searchBar">
+                        <input style="width: 100%;border: none;border-bottom: 2px solid teal;margin-bottom: 0.5%;background-color: rgb(230, 219, 219);height: 40px;border-radius: 7%;" type="text" placeholder="Search meds, brands and more">
+                        <i class="fa-solid fa-paper-plane-top"></i>
+                    </div>
+                    <div id = "slide_show"></div>
+                </div>
+                <div id="speOffers">
+                    <div class="headspec">
+                        <i class="fa-solid fa-badge-percent"></i>
+                        <p>Special Offers</p>
+                    </div>
+                    <div class="placeOrder" style="display: flex;gap: 10%;background-color: rgb(230, 216, 216);padding: 2%;width: 150%;border-radius: 8%;">
+                        <div>
+                            <p>Place your order via prescriptions</p>
+                            <button style="background-color: orange;color: white;border-radius: 3%;">Upload</button>
+                        </div>
+                        <div>
+                            <img src="https://newassets.apollo247.com/images/ic_prescription_pad.svg" alt="">
+                        </div>
+                    </div>
+                    <div id="orders" style="background-color: rgb(226, 215, 215);margin-top: 2%;padding: 2%;width: 150%;border-radius: 8%;">Your Orders</div>
+
+                </div>
              </div>
-            <div>
-             <div><img style = "width:50px;height:50px; margin-left:10%"src =https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHxoM8WjrUEphrYTcY2Tc50MJCwtOfc6LOWw&usqp=CAU></div>
-              <div><h3 style = "color:grey;padding-left:30%;margin-top:-10%"> Special Offers</h3></div>
-            </div>
-             </div>
 
-
-
-        <div class = "slide">
-            <div id = "slide_show"></div>
-            <div>
-                <h4 style = "color:rgb(71, 100, 90);margin:10px;">Place your order via prescriptions</h4>
-             <button>Upload</button>
-             <h4 style = "color:rgb(71, 100, 90);margin-left:20px;margin-top:30px;">Your folder</h4>
-           <div>
-               <img class = "image" src = "https://newassets.apollo247.com/images/ic_prescription_pad.svg">
-           </div>
-            </div>
-        </div>
-
-
-
-<!-- slide show and upload part remaining -->
 
 
         <h3>SHOP BY HEALTH CONDITIONS</h3>
@@ -400,11 +401,6 @@
 
 
 
-
-
-
-
-
     </div>    
     <script>
 
@@ -528,6 +524,13 @@ var list1 = [
   let productContainerO = document.getElementById("productContainerO");
   let productContainerT = document.getElementById("productContainerT");
 
+
+  let cart = localStorage.getItem("cart");
+
+        if(cart == null){
+            localStorage.setItem("cart",JSON.stringify([]));
+        }
+
             function getData(){
                 var data = JSON.parse(localStorage.getItem('List'));
                 showData(data)
@@ -538,7 +541,7 @@ var list1 = [
 
             getData()
 
-
+let i = 0
             function showData(data){
                 data.forEach(function(product){
                     console.log(product.image_src)
@@ -566,11 +569,15 @@ var list1 = [
 
                     let btn = document.createElement("button");
                     btn.textContent = "ADD TO CART";
+                    btn.onclick = function () {
+                    i+=1
+                    addToCart(product);
 
+                    }
 
-                    productCard.append(img,pName,para,hr,oldPrice,price,cashback,btn);
+                    productCard.append(img,pName,para,hr,oldPrice,price,cashback,btn)
 
-                    productContainer.append(productCard);
+                    productContainer.append(productCard)
                 })
             }
 
@@ -605,6 +612,11 @@ var list1 = [
 
                     let btn = document.createElement("button");
                     btn.textContent = "ADD TO CART";
+                    btn.onclick = function () {
+                    i+=1
+                    addToCart(product);
+
+                    }
 
 
                     productCard.append(img,pName,para,hr,oldPrice,price,cashback,btn);
@@ -640,6 +652,11 @@ var list1 = [
 
                     let btn = document.createElement("button");
                     btn.textContent = "ADD TO CART";
+                    btn.onclick = function () {
+                    i+=1
+                    addToCart(product);
+
+                    }
 
 
                     productCard.append(img,pName,para,hr,oldPrice,price,cashback,btn);
@@ -679,6 +696,11 @@ var list1 = [
 
                     let btn = document.createElement("button");
                     btn.textContent = "ADD TO CART";
+                    btn.onclick = function () {
+                    i+=1
+                    addToCart(product);
+
+                    }
 
 
                     productCard.append(img,pName,para,hr,oldPrice,price,cashback,btn);
@@ -698,11 +720,10 @@ faqs.forEach(faq => {
 })
 
 
-
 let images = [
-    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkYzwK5-Ejc-gcV7uYPfmmQKAHqcsUvtlqRA&usqp=CAU',
-    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgaWDnHxnC8tn6OIqWn0EWzD63BKg_PsElwg&usqp=CAU',
-    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0zvm9p0gefuoJeZEvzHzx2nnjq_AZWeX-Kg&usqp=CAU',
+    'Apollo_Clone_images/women_supplement_web.webp',
+    'Apollo_Clone_images/women_hygiene_web.webp',
+    'Apollo_Clone_images/women_personal_care_web.jpg',
         ]
         let container = document.getElementById('slide_show')
         function start(){
@@ -717,6 +738,45 @@ let images = [
             },2000)
         }
     start()
+
+
+
+
+
+        let idArr = []
+        function addToCart(productdata){
+           
+           let cart = JSON.parse(localStorage.getItem("cart"))
+        //    if(idArr.length === 0){
+            // cart.push(productdata)
+            //    localStorage.setItem("cart", JSON.stringify(cart))
+        //    }
+            cart.push(productdata)
+            localStorage.setItem("cart", JSON.stringify(cart))
+           
+       }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

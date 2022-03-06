@@ -1,4 +1,4 @@
-var para = document.getElementById("para")
+
 
 
   function openForm() {
@@ -8,9 +8,4 @@ var para = document.getElementById("para")
   function closeForm() {
     document.getElementById("myForm").style.display = "none";
   }
-
-  function changeText()
-{
-  para.textContent = "lodjdd"
-}
-  
+ 
