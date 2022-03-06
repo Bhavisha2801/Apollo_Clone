@@ -15,6 +15,7 @@ function navbar() {
             <p><a href="Blog.html">Blog</a> <br> <span class="line"></span> <a>Latest <br>Updates</a>
             
             </p>
+            <p><a href="health_record.html"> Health Record</a> <span class="line"></span> Health <br>Records</p>
             <a href="cart.html"><img class="cart" src="cart.png" alt=""></a>
             
             <a onclick="openForm()"><img class="user-profile" src="./opoloimages/user-profilee.webp" alt="user-profile"></a>
