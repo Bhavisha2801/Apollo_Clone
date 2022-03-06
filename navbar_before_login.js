@@ -10,8 +10,8 @@ function navbar() {
             </p>
             <p><a href="pharmacyy.html">Pharmacy</a> <br><span class="line"></span> <a>Medicnes & <br> other
                     products</a> </p>
-            <p><a href="Lab_Tests.html">Lab Tests</a> <br> <span class="line"></span> <a> Health
-                    <br>check-ups</a> </p>
+            <p><a href="appointment.html">Appointment</a>  <br> <span class="line"></span> <a> Book an
+                    <br>Appointment</a> </p>
             <p><a href="Blog.html">Blog</a> <br> <span class="line"></span> <a>Latest <br>Updates</a>
             
             </p>
