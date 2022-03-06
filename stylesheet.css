@@ -48,6 +48,7 @@ body {
 
 .logo img {
     max-width: 60px;
+    cursor: pointer;
 }
 
 .line {
@@ -463,7 +464,7 @@ body {
     color: #fc9f21;
 }
 .jss13 {
-    display: grid;
+    display: flex;
     justify-content: end;
 }
 .jss14 {
