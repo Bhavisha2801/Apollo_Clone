@@ -2,7 +2,7 @@ function navbar() {
     return `<div class="fixed_header">
     <div class="navbar">
         <div class="logo">
-        <a href="./apolo.html"><img src="https://newassets.apollo247.com/images/ic_logo.png" alt="logo"></a>
+        <a href="./index.html"><img src="https://newassets.apollo247.com/images/ic_logo.png" alt="logo"></a>
         
         </div>
         <div class="options">
