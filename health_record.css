@@ -10,7 +10,6 @@ body {
   margin-left: 15vw;
   margin-right: 15vw;
   background-color: white;
-  font-family: IBM Plex Sans, sans-serif;
 }
 #search-box {
   display: flex;
