@@ -26,15 +26,12 @@ body {
   font-family: sans-serif;
   font-weight: bold;
 }
-/* p {
-  margin-left: 500px;
-} */
 #booking-box {
   height: 150px;
   width: 300px;
   border: 1px solid rgb(247, 238, 238);
   border-radius: 3%;
-  margin: 10px auto 10px 600px;
+  margin: 10px auto 10px 400px;
   padding: 10px;
 }
 #btn {
@@ -142,8 +139,6 @@ option,
 .form-container .cancel {
   background-color: rgb(119, 47, 47);
 }
-
-/* Add some hover effects to buttons */
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }

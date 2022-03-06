@@ -2,7 +2,7 @@ function footer(){
     return `<div id="footer">
     <div id="icon">
       <img
-        style="height: 100px; width: 100px; padding: 10px"
+        style="height: 80px; width: 100px; padding: 10px"
         src="./Health_record_images/ic_logo.webp"
       />
     </div>
