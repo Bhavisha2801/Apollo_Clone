@@ -11,7 +11,21 @@ body {
     word-spacing: 3px;
     
 }
-
+#line1 {
+    width: 44px;
+}
+#line2 {
+    width: 55px;
+}
+#line3 {
+    width: 70px;
+}
+#line4 {
+    width: 25px;
+}
+#line5 {
+    width: 80px;
+}
 .main {
     width: 1050px;
     display: grid;
