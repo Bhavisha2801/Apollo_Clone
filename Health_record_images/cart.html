@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="login.js">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<style>
+    body {
+    background-color: #dcdfce;
+    /* margin: 0; */
+    font-size: 0.875rem;
+    /* font-family: IBM Plex Sans, sans-serif; */
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.43;
+    word-spacing: 3px;
+    
+}
+
+.main {
+    width: 1050px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f7f8f5;
+    box-shadow: 0px 2px 3px gray;
+    margin-top: -8px;
+    
+
+}
+    
+    img{
+        height: 100px;
+        width: 100px;
+    }
+    table,th,td{
+        border: 1px solid black;
+        text-align: center;
+        background-color: antiquewhite;
+        border-radius: 2%;
+    }
+    th{
+        background-color: rgb(236, 191, 131);
+    }
+    .rmv{
+        background-color: brown;
+        margin-top: 30%;
+        width: 80%;
+        height: 30px;
+        border: none;
+        border-radius: 5%;
+        /* margin-left: 10%; */
+    }
+</style>
+<body>
+
+
+    <div id="goBack" style="display: flex;gap: 10%;">
+    <div id="container"></div>
+    <div id="gobackbtn"><a href="index.html"><img style="width: 70%;height: 60px; margin-left: 100%;" src="https://newassets.apollo247.com/images/ic_logo.png" alt=""></a></div>
+    </div>
+
+    <div id="log"></div>
+</body>
+</html>
+
+<script>
+    let container = document.getElementById("container");
+
+    // get the data -localStorage , display the data
+
+
+    let cart = localStorage.getItem("cart");
+    if(cart === null){
+        localStorage.setItem("cart",JSON.stringify([]));
+    }
+
+    var table = document.createElement("table");
+
+    var thead = document.createElement("thead");
+    var theadRow = document.createElement("tr");
+
+    var th1 = document.createElement("th");
+    th1.textContent = "Product Image";
+    var th2 = document.createElement("th");
+    th2.textContent = "Product Name";
+    var th3 = document.createElement("th");
+    th3.textContent = "Product Description";
+    var th4 = document.createElement("th");
+    th4.textContent = "Product Old Price";
+    var th5 = document.createElement("th");
+    th5.textContent = "Product Price";
+    var th6 = document.createElement("th");
+    th6.textContent = "Product Cashback";
+    var th7 = document.createElement("th");
+    th7.textContent = "Remove Product";
+
+    theadRow.append(th1,th2,th3,th4,th5,th6,th7);
+    thead.append(theadRow);
+
+    var tbody = document.createElement("tbody");
+
+
+    function getData(){
+        let data = JSON.parse(localStorage.getItem("cart"));
+        console.log(data)
+        displayData(data);
+    }
+getData();
+
+    function displayData(data){
+        let count = 0;
+        data.forEach(function(product){
+            var tr = document.createElement("tr");
+            
+            var td1 = document.createElement("td");
+            let img = document.createElement("img");
+            img.src = product.image_src;
+            td1.append(img);
+
+            var td2 = document.createElement("td");
+            td2.textContent = product.p_name;
+
+            var td3 = document.createElement("td");
+            td3.textContent = product.para;
+
+            var td4 = document.createElement("td");
+            td4.textContent = "MRP " + product.price_old;
+
+            var td5 = document.createElement("td");
+            td5.textContent = "Rs." + product.price;
+
+            var td6 = document.createElement("td");
+            td6.textContent = `${product.symbol} 126 extra cashback`;
+
+            let td7 = document.createElement("button");
+            td7.textContent = "Delete";
+            td7.setAttribute('class','rmv')
+
+            count+=1
+            let countI = document.createElement("h4");
+                countI.textContent ="No : " + count
+
+
+            tr.append(td1,td2,td3,td4,td5,td6,td7);
+
+            tbody.append(tr);
+
+            var str = countI.textContent;
+                    var ind = str.split(" ")
+                    var index = ind[2]-1
+
+                td7.addEventListener('click',function(){
+
+                    console.log(count)
+
+            var li = localStorage.getItem('cart');
+                    
+                    let store = JSON.parse(localStorage.getItem('cart'))
+                    store.splice(ind, 1);
+                    localStorage.removeItem('cart');
+                    localStorage.setItem("cart", JSON.stringify(store));
+
+                    tr.innerHTML = ""
+
+                });
+
+
+        });
+        table.append(thead,tbody);
+        container.append(table);
+
+    }
+
+
+</script>
+
+
+<script type="module">
+    let header = document.getElementById("header");
+    import navbar from "./navbar_before_login.js";
+    header.innerHTML = navbar();
+
+
+    let log = document.getElementById("log");
+    import login from "./import_login.js";
+    log.innerHTML = login();
+
+</script>

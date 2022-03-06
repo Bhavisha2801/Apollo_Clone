@@ -1,0 +1,144 @@
+* {
+  border-radius: 5px;
+}
+body {
+  background-color: #e5e3c9;
+}
+
+#appointment-box {
+  background-color: #fff;
+  width: 100%;
+  height: 50vh;
+  /* border: 1px solid grey; */
+}
+.booking-box {
+  position: relative;
+  right: 200px;
+  /* justify-content: zz; */
+}
+#select_patient {
+  height: 50px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.selected_patient {
+  margin: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+#booking-box {
+  height: 150px;
+  width: 300px;
+  border: 1px solid rgb(247, 238, 238);
+  border-radius: 3%;
+  margin: 10px auto 10px 400px;
+  padding: 10px;
+}
+#btn {
+  width: 200px;
+  background-color: orange;
+  color: white;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 5%;
+  border: none;
+}
+img {
+  height: 40px;
+  width: 40px;
+  vertical-align: middle;
+}
+option,
+#patients {
+  text-decoration: underline;
+  color: green;
+  width: 200px;
+  height: 30px;
+  font-family: sans-serif;
+  border: none;
+  border-color: green;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 12%;
+  right: 233px;
+  /* border: 3px solid #f1f1f1; */
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+
+  background-color: rgb(179, 174, 174);
+  border-radius: 4%;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 45%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: rgb(119, 47, 47);
+}
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}

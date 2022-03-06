@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      margin: 10px;
+      /* width:100%;; */
+      /* height:30%; */
+      padding: 0;
+      /* background-color:black; */
+    }
+
+    .div1 {
+      display: flex;
+      margin: 10px;
+      flex-direction: row;
+    }
+    .div1 > div {
+      width: 400px;
+      height: 150px;
+      border-radius: 10px;
+      margin: 10px;
+    }
+    .images {
+      width: 60px;
+      height: 50px;
+      margin-left: 20px;
+    }
+    .div2 {
+      display: flex;
+      margin: 10px;
+
+      /* flex-direction:row; */
+    }
+    .div2 > div {
+      border: 1px solid rgb(211, 205, 205);
+      margin: 10px;
+      border-radius: 10px;
+      background-color: aliceblue;
+    }
+    .div3 {
+      /* margin-left: 400px;   */
+      border: 1px solid black;
+      margin: 10px;
+      background-color: aliceblue;
+    }
+    .div3 > div {
+      margin: 10px;
+      border: 1px solid black;
+      border-radius: 10px;
+    }
+    .textbox {
+      border-bottom: 1px solid green;
+      width: 250px;
+    }
+    .textbox input {
+      border: none;
+      outline: none;
+      background: none;
+    }
+    #button {
+      width: 100px;
+      height: 30px;
+      background-color: rgb(197, 201, 204);
+      margin-top: 10px;
+    }
+    p {
+      color: rgb(133, 180, 199);
+      margin-left: 10px;
+    }
+    h3 {
+      margin-left: 10px;
+    }
+    .div4 {
+      display: flex;
+
+      /* flex-direction:row; */
+      margin: 10px;
+    }
+    .div4 > div {
+      border: 1px solid rgb(211, 205, 205);
+      margin: 10px;
+      border-radius: 10px;
+      background-color: aliceblue;
+    }
+    .div5 {
+      margin: 10px;
+      /*
+    /* height:400px;  */
+      /* flex-direction:row; */
+    }
+
+    .div5 > div {
+      border: 1px solid rgb(211, 205, 205);
+      border-radius: 10px;
+      background-color: aliceblue;
+      width: 500px;
+      margin: 10px;
+    }
+    /* .img{
+   max-width:350px;
+    height:250px;
+    width:700px;
+}   */
+    .button {
+      margin: 60px;
+      /* margin-left:500px; */
+    }
+    .button input {
+      cursor: pointer;
+      color: orange;
+      width: 200px;
+      height: 50px;
+      border-radius: 10px;
+      background-color: rgb(229, 235, 235);
+      border: none;
+    }
+    @media (max-width: 1536px) {
+      body {
+        background-color: rgb(221, 230, 221);
+      }
+    }
+
+    @media (max-width: 650px) {
+      body {
+        background-color: yellow;
+      }
+      .div2 > div {
+        flex-direction: column;
+        /* background-color:yellow;  */
+      }
+      .div2 {
+        flex-direction: column;
+      }
+      .div4 > div {
+        flex-direction: column;
+      }
+      .div4 {
+        flex-direction: column;
+      }
+      .button {
+        flex-direction: column;
+      }
+    }
+    #container12 {
+      display: flex;
+      /* flex-direction:row; */
+      border: 1px solid black;
+      /* width:1500px; */
+    }
+    #container12 > img {
+      width: 100%;
+      height: 400px;
+    }
+  </style>
+  <body>
+    <div id="container"></div>
+
+    <div><h2>Categories</h2></div>
+    <div class="div1">
+      <div>
+        <img
+        src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVFXOw_vApCenfVdktug5BOZeXVTN1v6pUDoN5-eJe8pmYgy1Nggx34b26Q316q2S83wQ&usqp=CAU
+        class = images>
+        <p style="color: rgb(53, 42, 25)">Ayurvedic Medicine</p>
+      </div>
+      <div>
+        <img
+        src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuS3MNbpE-eqi7fUkoZsEBIltNIEYMdoSlPg&usqp=CAU
+        class = images>
+        <p style="color: rgb(63, 49, 27)">Health & Nutrition</p>
+      </div>
+      <div>
+        <img
+        src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVFXOw_vApCenfVdktug5BOZeXVTN1v6pUDoN5-eJe8pmYgy1Nggx34b26Q316q2S83wQ&usqp=CAU
+        class = images>
+        <p style="color: rgb(70, 56, 37)">Health Devices</p>
+      </div>
+      <div>
+        <img
+        src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhd5Z50ivT_dsznbuG4pDCRZLW7d3vhmbQH_YT0x7AvmE0vA5WcVRzBH4cO5hdtjlQ7ik&usqp=CAU
+        class = images>
+        <p style="color: rgb(70, 55, 33)">Men's Health</p>
+      </div>
+      <div>
+        <img
+        src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD-aLZgAdd1M42AhTqH5di0XvPj1zj-GTQ2g&usqp=CAU
+        class = images>
+        <p style="color: rgb(82, 64, 37)">Personal Care</p>
+      </div>
+    </div>
+    <div><h2>Latest Article</h2></div>
+    <div class="div2">
+      <div>
+        <img src =
+        https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJF8MFzlAzjUC-AKdWW0i3BLRlyJbPuKqO6w&usqp=CAU
+        class = "img"> >
+        <p>Health & Nutrition</p>
+        <h3>Love is the Cure:The Health Benefits of Love</h3>
+        <p>
+          Love is one of the most powerful emotions a human can experience.it
+          has the ability to make us happy,sad,excited,and everything in between
+        </p>
+      </div>
+      <div>
+        <img src =
+        https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJF8MFzlAzjUC-AKdWW0i3BLRlyJbPuKqO6w&usqp=CAU
+        class = "img">
+        <p>Health & Nutrition</p>
+        <h3>
+          Valentine's Day Inspired Wellness Activities to keep you Healthy and
+          Happy!
+        </h3>
+        <p>
+          Valentine's day is a time for love and happiness.But,it can also
+          become a time for overindulgence and stress .we tell you how can stay
+          healthy and happy this Valentine's Day
+        </p>
+      </div>
+      <div>
+        <img src =
+        https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0zvm9p0gefuoJeZEvzHzx2nnjq_AZWeX-Kg&usqp=CAU>
+        <p>Health & Nutrition</p>
+        <h3>Biotin-Rich Foods to Prevent Hair Loss</h3>
+        <p>
+          Eating foods rich in biotin is known to prevent hair loss by
+          stimulating keratin production in hair and increasing follicle growth
+          rate.
+        </p>
+      </div>
+    </div>
+
+    <div class="div2">
+      <div>
+        <img src =
+        https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiOaqLB9gOLziPT3AK0pUQjiFs6crV2KtEeg&usqp=CAU
+        class = "img">
+        <p>Health & Nutrition</p>
+        <h3>Love is the Cure:The Health Benefits of Love</h3>
+        <p>
+          Love is one of the most powerful emotions a human can experience.it
+          has the ability to make us happy,sad,excited,and everything in between
+        </p>
+      </div>
+      <div>
+        <img src =
+        https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzTmxFFtyyc6SVrIF3JzXF5CyddZbelZoTG96KsGU3wS6PQzSnTxnS0Bt97z4lX9iGs48&usqp=CAU
+        class = "img">
+        <p>Health & Nutrition</p>
+        <h3>
+          Valentine's Day Inspired Wellness Activities to keep you Healthy and
+          Happy!
+        </h3>
+        <p>
+          Valentine's day is a time for love and happiness.But,it can also
+          become a time for overindulgence and stress .we tell you how can stay
+          healthy and happy this Valentine's Day
+        </p>
+      </div>
+      <div>
+        <img src =
+        https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3BhXluVy6XP_PwylrOVA4hj_JOb0b8Pv1RGH2Pkf48hwSaIELk0jJfJEowFWk29qj8hk&usqp=CAU
+        class = "img">
+        <p>Health & Nutrition</p>
+        <h3>Biotin-Rich Foods to Prevent Hair Loss</h3>
+        <p>
+          Eating foods rich in biotin is known to prevent hair loss by
+          stimulating keratin production in hair and increasing follicle growth
+          rate.
+        </p>
+      </div>
+    </div>
+    <div class="div3">
+      <div>
+        <h3>Sign up for our Health Library Daily Newsletter</h3>
+        <p>Get doctor-approved health tips,news,and more.</p>
+        <h4>Email</h4>
+        <div class="textbox">
+          <input type="text" placeholder="Enter email id" name="" value="" />
+        </div>
+      </div>
+      <div><input type="submit" value="submit" id="button" /></div>
+    </div>
+
+    <div class="div4">
+      <div>
+        <img src =
+        https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJQUKWL0QDUuUeGx9pif6WXzclCEEC0y7yzl3L19apNHOdpj277F8wBdnzzk5eViYLIOE&usqp=CAU
+        class = "img">
+        <p>Health & Nutrition</p>
+        <h3>Can Poor Dental Health Cause Heart Problems?</h3>
+        <p>
+          Some harmful bacterial in the mouth can enter the bloodstream through
+          infected gums and reach the heart to cause damage.Various studies have
+          link between heart problems and poor oral hygiene.
+        </p>
+      </div>
+      <div>
+        <img src =
+        https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrjGtBrUT_KH9Zt7YBBU-Sq_qeMqUJcIXNng&usqp=CAU
+        class = "img">
+        <p>Personal Care</p>
+        <h3>How to Reduce Dark Circles Under the Eyes?</h3>
+        <p>
+          Dark circles are caused by stress,lack of sleep,or fatigue.Home
+          remedies like cucumber slices, cold compresses,and cosmetic products
+          can help reduce their appearence.
+        </p>
+      </div>
+      <div>
+        <img src
+        =https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgaWDnHxnC8tn6OIqWn0EWzD63BKg_PsElwg&usqp=CAU>
+        <p>Health & Nutrition</p>
+        <h3>Omicron Fact File:All you Need to know</h3>
+        <p>
+          Omicron is a variant of the SARS-cOV-2 virus with 32 mutations,which
+          make the attachment of the coronavirus spike protein to human cells
+          easier.
+        </p>
+      </div>
+    </div>
+    <div class="div5">
+      <div>
+        <img src =
+        https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoKWqLwkUr-G_sFrYLSSKwCEEjih_XUcXsxvyiPXsTo6OpQsm40k4FXwgJUG4qgFk2BSo&usqp=CAU
+        class = "img">
+        <p>Health & Nutrition</p>
+        <h3>Supplements for weight Loss:Do They Work?</h3>
+        <p>
+          Health supplements may help lose weight by decreasing appetite,burning
+          fat,reducing fat absorbing,and speeding up metabolism.
+        </p>
+      </div>
+    </div>
+
+    <div class="button">
+      <input type="submit" value="VIEW MORE" />
+    </div>
+    <div>
+      <img src="./blogimages/menshealth.png" />
+    </div>
+  </body>
+  <script>
+    let images = [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkYzwK5-Ejc-gcV7uYPfmmQKAHqcsUvtlqRA&usqp=CAU",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgaWDnHxnC8tn6OIqWn0EWzD63BKg_PsElwg&usqp=CAU",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0zvm9p0gefuoJeZEvzHzx2nnjq_AZWeX-Kg&usqp=CAU",
+    ];
+    let container = document.getElementById("container");
+    function start() {
+      let count = 0;
+      setInterval(function () {
+        container.innerHTML = null;
+        if (count === images.length) {
+          count = 0;
+        }
+        let img = document.createElement("img");
+        img.src = images[count];
+        container.append(img);
+        count++;
+      }, 2000);
+    }
+    start();
+  </script>
+</html>
