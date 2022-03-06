@@ -1,0 +1,505 @@
+         #productContainer{
+            display: grid;
+            grid-template-columns: 17% 17% 17% 17% 17%;
+            /* border: 1px solid black; */
+            gap: 3%;
+            justify-content: center;
+        }
+        #productContainer > div{
+            /* border: 1px solid black; */
+            height: 280px;
+            text-align: center;
+            border-radius: 10%;
+            box-shadow: 10px 10px 10px grey;
+            margin-top: 0%;
+            transition: margin-top 0.5s;
+        }
+        #productContainer > div:hover{
+            margin-top: -4%;
+        }
+        #productContainer > div > img{
+            width: 40%;
+            height: 80px;
+            /* margin-left: 10%; */
+            margin-top: 2%;
+        }
+        #productContainer > div > p{
+            font-size: 13px;
+            color: rgb(33, 73, 105);
+        }
+        #productContainer > div > h4{
+            color: rgb(33, 73, 105);
+            margin-top: -10%;
+        }
+        #productContainer > div > h5{
+            color: rgb(33, 73, 105);
+            text-decoration: line-through;
+            /* margin-top: -1%; */
+        }
+        #productContainer > div > h4 + p{
+            margin-top: -6%;
+            color: rgb(94, 186, 223);
+        }
+        #productContainer > div > button{
+            background-color: white;
+            border: none;
+            color: orange;
+            font-weight: bold;
+            width: 100%;
+            height: 39.5px;
+            border-radius: 5%;
+        }
+        #productContainer > div > button:hover{
+            background-color: rgb(240, 230, 211);
+            transition: background-color 0.5s;
+        }
+        #productContainer > div > hr{
+            width: 70%;
+            background-color: grey;
+        }
+
+
+        /* another one */
+
+
+
+        #productContainerO{
+            display: grid;
+            grid-template-columns: 17% 17% 17% 17% 17%;
+            /* border: 1px solid black; */
+            gap: 3%;
+            justify-content: center;
+            margin-top: 2%;
+        }
+        #productContainerO > div{
+            /* border: 1px solid black; */
+            height: 280px;
+            text-align: center;
+            border-radius: 10%;
+            box-shadow: 10px 10px 10px grey;
+            margin-top: 0%;
+            transition: margin-top 0.5s;
+        }
+        #productContainerO > div:hover{
+            margin-top: -4%;
+        }
+        #productContainerO > div > img{
+            width: 40%;
+            height: 80px;
+            /* margin-left: 10%; */
+            margin-top: 2%;
+        }
+        #productContainerO > div > p{
+            font-size: 13px;
+            color: rgb(33, 73, 105);
+        }
+        #productContainerO > div > h4{
+            color: rgb(33, 73, 105);
+            margin-top: -10%;
+        }
+        #productContainerO > div > h5{
+            color: rgb(33, 73, 105);
+            text-decoration: line-through;
+            /* margin-top: -1%; */
+        }
+        #productContainerO > div > h4 + p{
+            margin-top: -6%;
+            color: rgb(94, 186, 223);
+        }
+        #productContainerO > div > button{
+            background-color: white;
+            border: none;
+            color: orange;
+            font-weight: bold;
+            width: 100%;
+            height: 39.5px;
+            border-radius: 5%;
+        }
+        #productContainerO > div > button:hover{
+            background-color: rgb(240, 230, 211);
+            transition: background-color 0.5s;
+        }
+        #productContainerO > div > hr{
+            width: 70%;
+            background-color: grey;
+        }
+
+
+
+        /* third one */
+
+        #productContainerT{
+            display: grid;
+            grid-template-columns: 17% 17% 17% 17% 17%;
+            /* border: 1px solid black; */
+            gap: 3%;
+            justify-content: center;
+            margin-top: 2%;
+        }
+        #productContainerT > div{
+            /* border: 1px solid black; */
+            height: 280px;
+            text-align: center;
+            border-radius: 10%;
+            box-shadow: 10px 10px 10px grey;
+            margin-top: 0%;
+            transition: margin-top 0.5s;
+        }
+        #productContainerT > div:hover{
+            margin-top: -4%;
+        }
+        #productContainerT > div > img{
+            width: 40%;
+            height: 80px;
+            /* margin-left: 10%; */
+            margin-top: 2%;
+        }
+        #productContainerT > div > p{
+            font-size: 13px;
+            color: rgb(33, 73, 105);
+        }
+        #productContainerT > div > h4{
+            color: rgb(33, 73, 105);
+            margin-top: -10%;
+        }
+        #productContainerT > div > h5{
+            color: rgb(33, 73, 105);
+            text-decoration: line-through;
+            /* margin-top: -1%; */
+        }
+        #productContainerT > div > h4 + p{
+            margin-top: -6%;
+            color: rgb(94, 186, 223);
+        }
+        #productContainerT > div > button{
+            background-color: white;
+            border: none;
+            color: orange;
+            font-weight: bold;
+            width: 100%;
+            height: 39.5px;
+            border-radius: 5%;
+        }
+        #productContainerT > div > button:hover{
+            background-color: rgb(240, 230, 211);
+            transition: background-color 0.5s;
+        }
+        #productContainerT > div > hr{
+            width: 70%;
+            background-color: grey;
+        }
+
+
+
+        .butn{
+            display: grid;
+            grid-template-columns: 13% 13% 13% 13% 13% 13%;
+            gap: 1%;
+            margin-top: 2%;
+            margin-bottom: 5%;
+            justify-content: center;
+        }
+        .butn > div{
+            display: flex;
+            /* border: 1px solid black; */
+            border-radius: 6%;
+            box-shadow: 5px 5px 10px grey;
+            padding: 3%;
+            margin-top: 0%;
+            transition: margin-top 0.5s;
+            justify-content: center;
+        }
+        .butn > div:hover{
+            margin-top: -3%;
+        }
+
+        .butn > div > img{
+            width: 20%;
+            height: 40px;
+            margin-top: 4%;
+        }
+
+
+        .main > h3{
+            margin-top: 4%;
+        }
+
+        #posters{
+            display: grid;
+            grid-template-columns: 10% 10% 10%;
+            gap: 20%;
+            justify-content: center;
+        }
+        #posters > img{
+            width: 200%;
+            height: 130px;
+            margin-top: 0%;
+            transition: margin-top 0.5s;
+        }
+        #posters > img:hover{
+            margin-top: -3%;
+        }
+        #simText{
+            display: grid;
+            grid-template-columns: 80% 30%;
+            justify-content: center;
+            align-items: center;
+            margin-left: auto;
+            margin-right: 30%;
+            width: 60%;
+        }
+        #simText > div >  img{
+            width: 150%;
+            margin-top: 25%;
+        }
+        .flx{
+            display: flex;
+            flex-direction: row;
+        }
+        .flx > h3 > img{
+            width: 20%;
+        }
+        .flx > h3{
+            margin-left: 10%;
+            color: teal;
+        }
+        #simText > div > hr{
+            width: 40%;
+            margin-left: -0.1%;
+            margin-left: 10%;
+            background-color: teal;
+        }
+        #simText > div > p{
+            margin-left: 10%;
+            margin-top: -2%;
+            color: teal;
+        }
+
+
+
+
+        #productContainerF{
+            display: grid;
+            grid-template-columns: 17% 17% 17% 17% 17%;
+            /* border: 1px solid black; */
+            gap: 3%;
+            justify-content: center;
+        }
+        #productContainerF > div{
+            /* border: 1px solid black; */
+            height: 280px;
+            text-align: center;
+            border-radius: 10%;
+            box-shadow: 10px 10px 10px grey;
+            margin-top: 0%;
+            transition: margin-top 0.5s;
+        }
+        #productContainerF > div:hover{
+            margin-top: -4%;
+        }
+        #productContainerF > div > img{
+            width: 40%;
+            height: 80px;
+            /* margin-left: 10%; */
+            margin-top: 2%;
+        }
+        #productContainerF > div > p{
+            font-size: 13px;
+            color: rgb(33, 73, 105);
+        }
+        #productContainerF > div > h4{
+            color: rgb(33, 73, 105);
+            margin-top: -10%;
+        }
+        #productContainerF > div > h5{
+            color: rgb(33, 73, 105);
+            text-decoration: line-through;
+            /* margin-top: -1%; */
+        }
+        #productContainerF > div > h4 + p{
+            margin-top: -6%;
+            color: rgb(94, 186, 223);
+        }
+        #productContainerF > div > button{
+            background-color: white;
+            border: none;
+            color: orange;
+            font-weight: bold;
+            width: 100%;
+            height: 39.5px;
+            border-radius: 5%;
+        }
+        #productContainerF > div > button:hover{
+            background-color: rgb(240, 230, 211);
+            transition: background-color 0.5s;
+        }
+        #productContainerF > div > hr{
+            width: 70%;
+            background-color: grey;
+        }
+
+
+
+        #prote{
+            width: 100%;
+            height: 150px;
+            border-radius: 3%;
+        }
+
+        .textOnly > div > h3{
+            color: rgb(7, 94, 94);
+        }
+        .textOnly > div > p{
+            color: rgb(6, 82, 82);
+        }
+
+
+
+
+        
+.faq-text{
+    color: #0e5d74;
+}
+
+#faq-main{
+    margin-top: 6%;
+}
+
+/* .faq-text{
+    padding-left: 3%;
+} */
+
+.faq{
+    max-width: 100%;
+    /* margin-top: 1rem; */
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #fff;
+    cursor: pointer;
+    background-color: white;
+}
+
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question h3{
+    font-size: 1.4rem;
+    padding-left: 1%;
+}
+
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+    /* padding: 1%; */
+}
+
+.answer p{
+    /* padding-top: rem; */
+    line-height: 1.6;
+    font-size: 1.4rem;
+    padding: 2%;
+}
+
+.faq.active .answer{
+    max-height: fit-content;
+    animation: fade 1s ease-in-out;
+}
+
+.faq.active svg{
+    transform: rotate(180deg);
+}
+
+svg{
+    transition: transform 0.5s ease-in;
+}
+
+@keyframes fade{
+    from{
+        opacity: 0;
+        transform: translate(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+
+
+.question > h3{
+    font-size: 18px;
+    color: #0e5d74;
+}
+
+.answer > p{
+    font-size: 15px;
+    color: #0e5d74;
+}
+
+
+.slide{
+    /* border:1px solid black; */
+    width:100%;
+    height:200px;
+    display:flex;
+}
+.slide > div{
+    /* border:1px solid black; */
+    margin:10px;
+    width:100%;
+    margin:10px;
+     border:1px solid rgb(199, 193, 193); 
+    border-radius:10px;
+}
+#slide_show{
+    width:100%;
+    height:150px;
+     /* border:1px solid black;  */
+     border-radius:10px;
+   
+    display:fkex;
+}
+#slide_show > img{
+ width:100%;
+ height:180px;
+}
+
+.slide > div > button{
+    width:200px;
+    height:40px;
+    border-radius:20px;
+    cursor:pointer;
+    margin-left:10%;
+    background-color:orange;
+}
+.image{
+padding-left:70%;
+margin-top:-100%;
+}
+
+.search_bar{
+    display:flex;
+    border:1px solid black;
+    margin:10px;
+}
+.search_bar>div{
+/* border:1px solid black; */
+margin:10px;
+width:100%; 
+
+background-color:rgb(245, 237, 237);
+
+}
+.searchbar{
+    width:100%;
+     height:40px; 
+     border:none; 
+    border-bottom:1px solid green;
+    color:grey;
+    background-color:rgb(245, 237, 237);
+    border-radius:10px;
+    margin-left:10px;
+    
+}

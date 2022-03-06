@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <style>
+        #productContainer{
+            display: grid;
+            grid-template-columns: 17% 17% 17% 17% 17%;
+            /* border: 1px solid black; */
+            gap: 5%;
+            justify-content: center;
+        }
+        #productContainer > div{
+            /* border: 1px solid black; */
+            height: 250px;
+            text-align: center;
+            border-radius: 5%;
+            box-shadow: 4px 4px 4px grey;
+            margin-top: 0%;
+            transition: margin-top 0.5s;
+        }
+        #productContainer > div:hover{
+            margin-top: -4%;
+        }
+        #productContainer > div > img{
+            width: 40%;
+            height: 80px;
+            /* margin-left: 10%; */
+            margin-top: 2%;
+        }
+        #productContainer > div > img + p + p{
+            margin-top: -10%;
+        }
+        #productContainer > div > p{
+            font-size: 13px;
+            color: rgb(33, 73, 105);
+        }
+        #productContainer > div > h4{
+            color: rgb(33, 73, 105);
+            margin-top: -15%;
+        }
+        #productContainer > div > h5{
+            color: rgb(33, 73, 105);
+            text-decoration: line-through;
+            margin-top: -1%;
+        }
+        #productContainer > div > h4 + p{
+            margin-top: -12%;
+            color: rgb(94, 186, 223);
+        }
+        #productContainer > div > button{
+            background-color: white;
+            border: none;
+            color: orange;
+            font-weight: bold;
+            width: 153px;
+            height: 39.5px;
+            border-radius: 5%;
+        }
+        #productContainer > div > button:hover{
+            background-color: rgb(240, 230, 211);
+            transition: background-color 0.5s;
+        }
+        #productContainer > div > hr{
+            width: 70%;
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <div id="productContainer"></div>
+    <script>
+
+var list1 = [
+  {
+    id: 1,
+    p_name: "Adult Diaper",
+    tag: "Hot Seller",
+    image_src: "./product_images/product1.webp",
+    para: "Essecent",
+    price: "499",
+    price_old: "999",
+    symbol: "₹",
+    off: "50%",
+  },
+  {
+    id: 2,
+    p_name: "Adult Diaper",
+    tag: "Hot Seller",
+    image_src: "./product_images/product9.webp",
+    para: "Essecent",
+    price: "499",
+    price_old: "999",
+    symbol: "₹",
+    off: "50%",
+  },
+  {
+    id: 3,
+    p_name: "Adult Diaper",
+    tag: "Hot Seller",
+    image_src: "./product_images/product3.webp",
+    para: "Essecent",
+    price: "499",
+    price_old: "999",
+    symbol: "₹",
+    off: "50%",
+  },
+  {
+    id: 4,
+    p_name: "Adult Diaper",
+    tag: "Hot Seller",
+    image_src: "./product_images/product4.webp",
+    para: "Essecent",
+    price: "499",
+    price_old: "999",
+    symbol: "₹",
+    off: "50%",
+  },
+  {
+    id: 5,
+    p_name: "Adult Diaper",
+    tag: "Hot Seller",
+    image_src: "./product_images/product5.webp",
+    para: "Essecent",
+    price: "499",
+    price_old: "999",
+    symbol: "₹",
+    off: "50%",
+  },
+  {
+    id: 6,
+    p_name: "Adult Diaper",
+    tag: "Hot Seller",
+    image_src: "./product_images/product6.webp",
+    para: "Essecent",
+    price: "499",
+    price_old: "999",
+    symbol: "₹",
+    off: "50%",
+  },
+  {
+    id: 7,
+    p_name: "Adult Diaper",
+    tag: "Hot Seller",
+    image_src: "./product_images/product7.webp",
+    para: "Essecent",
+    price: "499",
+    price_old: "999",
+    symbol: "₹",
+    off: "50%",
+  },
+  {
+    id: 8,
+    p_name: "Adult Diaper",
+    tag: "Hot Seller",
+    image_src: "./product_images/product8.webp",
+    para: "Essecent",
+    price: "499",
+    price_old: "999",
+    symbol: "₹",
+    off: "50%",
+  },
+  {
+    id: 9,
+    p_name: "Adult Diaper",
+    tag: "Hot Seller",
+    image_src: "./product_images/product9.webp",
+    para: "Essecent",
+    price: "499",
+    price_old: "999",
+    symbol: "₹",
+    off: "50%",
+  },
+  {
+    id: 10,
+    p_name: "Adult Diaper",
+    tag: "Hot Seller",
+    image_src: "./product_images/product10.webp",
+    para: "Essecent",
+    price: "499",
+    price_old: "999",
+    symbol: "₹",
+    off: "50%",
+  },
+]
+
+
+        localStorage.setItem('List',JSON.stringify(list1));
+
+  let productContainer = document.getElementById("productContainer");
+
+            function getData(){
+                var data = JSON.parse(localStorage.getItem('List'));
+                showData(data)
+            }
+
+            getData()
+
+
+            function showData(data){
+                data.forEach(function(product){
+                    console.log(product.image_src)
+                    let productCard = document.createElement("div");
+
+                    let img = document.createElement("img");
+                    img.src = product.image_src;
+
+                    let pName = document.createElement("p");
+                    pName.textContent = product.p_name;
+
+                    let para = document.createElement("p");
+                    para.textContent = product.para;
+
+                    let hr = document.createElement("hr");
+
+                    let oldPrice = document.createElement("h5");
+                    oldPrice.textContent = "MRP " + product.price_old;
+
+                    let price = document.createElement("h4");
+                    price.textContent = "Rs." + product.price;
+
+                    let cashback = document.createElement("p");
+                    cashback.textContent = `${product.symbol} 126 extra cashback`;
+
+                    let btn = document.createElement("button");
+                    btn.textContent = "ADD TO CART";
+
+
+                    productCard.append(img,pName,para,hr,oldPrice,price,cashback,btn);
+                    productContainer.append(productCard)
+                })
+            }
+
+    </script>
+</body>
+</html>
